@@ -5689,7 +5689,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Select whether the injection angle specifies the beginning of the injection pulse or its end.</ToolTipText>
-          <value>0</value>
+          <value>1</value>
           <min>0</min>
           <max>0</max>
           <options>
@@ -5787,7 +5787,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>With this set to YES, there will be a priming pulse every time the engine starts.</ToolTipText>
-          <value>0</value>
+          <value>1</value>
           <min>0</min>
           <max>0</max>
           <options>
@@ -5974,7 +5974,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>After AE is triggered, the amount of revolutions of the engine the extra fuel is added.</ToolTipText>
-          <value>10</value>
+          <value>2</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -5985,7 +5985,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>After AE is triggered, and the Hold Rotations have elapsed, this is the amount of revolutions of the engine the extra fuel is decayed to zero over.</ToolTipText>
-          <value>0</value>
+          <value>2</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -5996,7 +5996,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>The mimum AE Delta that needs to occurs before AE is triggered. Typically 10-20 bigger than the maximum delta recorded under steady state driving.</ToolTipText>
-          <value>90</value>
+          <value>50</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -6116,7 +6116,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Selects which fan determines the idle duty adder to be applied.</ToolTipText>
-          <value>0</value>
+          <value>1</value>
           <min>0</min>
           <max>0</max>
           <options>
@@ -6145,7 +6145,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>PWM Duty to be added to already existing idle duty.</ToolTipText>
-          <value>10</value>
+          <value>1</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -6449,7 +6449,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>The maximum 'effective' duty of the PWM Idle Solenoid. This varies dependant on the valve. Used for PID Closed loop control.</ToolTipText>
-          <value>45</value>
+          <value>60</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -6560,7 +6560,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Adder to be used when starting, before switching to closed loop.</ToolTipText>
-          <value>20</value>
+          <value>17</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -6577,7 +6577,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Time, in seconds, for which the OL algorithm (plus adder) is used when starting, before switching to closed loop.</ToolTipText>
-          <value>5.3</value>
+          <value>1.3</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -6594,7 +6594,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Adder to be used when returning to idle, before switching to closed loop.</ToolTipText>
-          <value>6</value>
+          <value>8</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -6611,7 +6611,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Time, in seconds, for which the OL algorithm (plus adder) is used when returning to idle, before switching to closed loop.</ToolTipText>
-          <value>2</value>
+          <value>1</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -6724,7 +6724,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>The MAXIMUM throttle position before we consider us not in idle mode. Typically 3%.</ToolTipText>
-          <value>3</value>
+          <value>0.3</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -6757,7 +6757,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>When RPM/Throttle position causes us to leave idle control, this is the duty the valve should be left running at.</ToolTipText>
-          <value>26</value>
+          <value>25</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -6775,7 +6775,7 @@
           <type>InputBox</type>
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
-          <value>60</value>
+          <value>30</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -6792,7 +6792,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>If the RPM error is less than this number, then the PID wont try to correct the RPM - Typically around 30 is a good setting for this.</ToolTipText>
-          <value>0</value>
+          <value>30</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -6808,7 +6808,7 @@
           <type>InputBox</type>
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
-          <value>0.8</value>
+          <value>0.1</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -6824,7 +6824,7 @@
           <type>InputBox</type>
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
-          <value>600</value>
+          <value>150</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -17728,7 +17728,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Select the source for the first bank's lambda sensor. Refer to the user manual for further details on each mode.</ToolTipText>
-          <value>1</value>
+          <value>0</value>
           <min>0</min>
           <max>0</max>
           <options>
@@ -17749,7 +17749,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Select the source for the second bank's lambda sensor. Refer to the user manual for further details on each mode.</ToolTipText>
-          <value>1</value>
+          <value>0</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -17805,7 +17805,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Number of seconds between the moment when the engine is started and the sensor's reading begins to be used.</ToolTipText>
-          <value>30</value>
+          <value>5</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -17823,7 +17823,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>The coolant temperature in degrees before the algorithm will operate. (i.e. until the engine is above 65*C)</ToolTipText>
-          <value>80</value>
+          <value>5</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -17841,7 +17841,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>The minimum RPM before the algorithm will operate.</ToolTipText>
-          <value>800</value>
+          <value>600</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -17859,7 +17859,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>The zone in KPa reported from the MAP sensor where the algorithm will operate.</ToolTipText>
-          <value>28</value>
+          <value>30</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -17895,7 +17895,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>The minimum throttle position required to activate the correction algorithm.</ToolTipText>
-          <value>0</value>
+          <value>-1</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -17931,7 +17931,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Max TPS Delta at which the algorithm will operate.</ToolTipText>
-          <value>300</value>
+          <value>100</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -18087,7 +18087,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Under this voltage, the WBO2 sensor is considered faulty and its reading is not taken into account.</ToolTipText>
-          <value>0</value>
+          <value>0.3</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -18104,7 +18104,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Over this voltage, the WBO2 sensor is considered faulty and its reading is not taken into account.</ToolTipText>
-          <value>5.5</value>
+          <value>4.7</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -18424,7 +18424,7 @@
           <type>InputBox</type>
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
-          <value>210</value>
+          <value>205</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -20067,7 +20067,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Enable/Disable knock control.</ToolTipText>
-          <value>0</value>
+          <value>1</value>
           <min>0</min>
           <max>0</max>
           <options>
@@ -20099,7 +20099,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Maximum RPM for the knock control to be active.</ToolTipText>
-          <value>3500</value>
+          <value>7000</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -20110,7 +20110,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Maximum retard when knock is detected.</ToolTipText>
-          <value>10</value>
+          <value>6</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -20121,7 +20121,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Number of rotations between two consecutive ignition retard events.</ToolTipText>
-          <value>50</value>
+          <value>0</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -20132,7 +20132,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>By how many degrees should the ignition be retarded on each adjustment event.</ToolTipText>
-          <value>1</value>
+          <value>1.5</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -20143,7 +20143,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Number of rotations between two consecutive ignition advance events.</ToolTipText>
-          <value>50</value>
+          <value>1</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -20154,7 +20154,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>By how many degrees should the ignition be advanced on each adjustment event.</ToolTipText>
-          <value>1</value>
+          <value>0.2</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -20165,7 +20165,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>How many degrees after ignition should we start listening for knock.</ToolTipText>
-          <value>0</value>
+          <value>20</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -20176,7 +20176,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Width, in degrees, of the knock window.</ToolTipText>
-          <value>30</value>
+          <value>45</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -20187,7 +20187,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Time constant, in micro-seconds, for the integrator in the knock chip. (40-600)</ToolTipText>
-          <value>200</value>
+          <value>150</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -20198,7 +20198,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Programmable gain of the knock chip (0.111 - 2)</ToolTipText>
-          <value>1</value>
+          <value>0.15</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -20209,7 +20209,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Center band-pass frequency of the knock sensor (1.22 - 19.98)</ToolTipText>
-          <value>7.34</value>
+          <value>6.9</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -20417,7 +20417,7 @@
           <type>ComboBox</type>
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
-          <value>0</value>
+          <value>1</value>
           <min>0</min>
           <max>0</max>
           <options>
@@ -20437,7 +20437,7 @@
           <type>InputBox</type>
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
-          <value>10000</value>
+          <value>1400</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -20447,7 +20447,7 @@
           <type>InputBox</type>
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
-          <value>45</value>
+          <value>32</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -20457,7 +20457,7 @@
           <type>InputBox</type>
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
-          <value>8</value>
+          <value>0.1</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -20478,7 +20478,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Seconds that need to pass after entering overrun conditions, before fuel cut begins.</ToolTipText>
-          <value>2</value>
+          <value>0</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -20489,7 +20489,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Progressive fuel cut duration. Set to '0' to disable.</ToolTipText>
-          <value>5</value>
+          <value>1.5</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -20500,7 +20500,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Progressive fuel return duration. Set to '0' to disable.</ToolTipText>
-          <value>2</value>
+          <value>0.5</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -20511,7 +20511,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>How much fuel to add after exiting overrun.</ToolTipText>
-          <value>20</value>
+          <value>30</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -20522,7 +20522,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Duration of fuel adder after exiting overrun.</ToolTipText>
-          <value>10</value>
+          <value>0.3</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
@@ -21425,7 +21425,7 @@
           <type>InputBox</type>
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
-          <value>0.5</value>
+          <value>1</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -21441,7 +21441,7 @@
           <type>InputBox</type>
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
-          <value>700</value>
+          <value>1500</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -21548,7 +21548,7 @@
           <type>InputBox</type>
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
-          <value>50</value>
+          <value>10</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -23571,7 +23571,7 @@
       </configParams>
       <numberOfOutputs>10</numberOfOutputs>
       <outputLinkIds>
-        <unsignedShort>3000</unsignedShort>
+        <unsignedShort>2089</unsignedShort>
         <unsignedShort>2080</unsignedShort>
         <unsignedShort>2081</unsignedShort>
         <unsignedShort>2095</unsignedShort>
@@ -23603,8 +23603,8 @@
       </inputNames>
       <numberOfInputs>3</numberOfInputs>
       <inputLinkIds>
-        <unsignedShort>3000</unsignedShort>
-        <unsignedShort>3000</unsignedShort>
+        <unsignedShort>653</unsignedShort>
+        <unsignedShort>658</unsignedShort>
         <unsignedShort>2089</unsignedShort>
       </inputLinkIds>
       <InputConfigs />
@@ -23624,7 +23624,7 @@
           <type>ComboBox</type>
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
-          <value>0</value>
+          <value>1</value>
           <min>0</min>
           <max>0</max>
           <options>
@@ -23644,7 +23644,7 @@
           <type>InputBox</type>
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
-          <value>0</value>
+          <value>30</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -23684,7 +23684,7 @@
       </configParams>
       <numberOfOutputs>10</numberOfOutputs>
       <outputLinkIds>
-        <unsignedShort>3000</unsignedShort>
+        <unsignedShort>2110</unsignedShort>
         <unsignedShort>2082</unsignedShort>
         <unsignedShort>2083</unsignedShort>
         <unsignedShort>2095</unsignedShort>
@@ -23716,8 +23716,8 @@
       </inputNames>
       <numberOfInputs>3</numberOfInputs>
       <inputLinkIds>
-        <unsignedShort>3000</unsignedShort>
-        <unsignedShort>3000</unsignedShort>
+        <unsignedShort>754</unsignedShort>
+        <unsignedShort>750</unsignedShort>
         <unsignedShort>2090</unsignedShort>
       </inputLinkIds>
       <InputConfigs />
@@ -25543,262 +25543,262 @@
         <float>15</float>
       </input_1>
       <output>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
-        <float>2.8</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.5</float>
+        <float>4.4</float>
+        <float>4.4</float>
+        <float>4.4</float>
+        <float>4.4</float>
+        <float>4.4</float>
+        <float>4.4</float>
+        <float>4.4</float>
+        <float>4.4</float>
+        <float>4.4</float>
+        <float>4.4</float>
+        <float>4.4</float>
+        <float>4.4</float>
+        <float>4.4</float>
+        <float>4.4</float>
+        <float>4.4</float>
+        <float>4.4</float>
+        <float>4.3</float>
+        <float>4.3</float>
+        <float>4.3</float>
+        <float>4.3</float>
+        <float>4.3</float>
+        <float>4.3</float>
+        <float>4.3</float>
+        <float>4.3</float>
+        <float>4.3</float>
+        <float>4.3</float>
+        <float>4.3</float>
+        <float>4.3</float>
+        <float>4.3</float>
+        <float>4.3</float>
+        <float>4.3</float>
+        <float>4.3</float>
+        <float>4.20000029</float>
+        <float>4.20000029</float>
+        <float>4.20000029</float>
+        <float>4.20000029</float>
+        <float>4.20000029</float>
+        <float>4.20000029</float>
+        <float>4.20000029</float>
+        <float>4.20000029</float>
+        <float>4.20000029</float>
+        <float>4.20000029</float>
+        <float>4.20000029</float>
+        <float>4.20000029</float>
+        <float>4.20000029</float>
+        <float>4.20000029</float>
+        <float>4.20000029</float>
+        <float>4.20000029</float>
+        <float>4.1</float>
+        <float>4.1</float>
+        <float>4.1</float>
+        <float>4.1</float>
+        <float>4.1</float>
+        <float>4.1</float>
+        <float>4.1</float>
+        <float>4.1</float>
+        <float>4.1</float>
+        <float>4.1</float>
+        <float>4.1</float>
+        <float>4.1</float>
+        <float>4.1</float>
+        <float>4.1</float>
+        <float>4.1</float>
+        <float>4.1</float>
+        <float>4</float>
+        <float>4</float>
+        <float>4</float>
+        <float>4</float>
+        <float>4</float>
+        <float>4</float>
+        <float>4</float>
+        <float>4</float>
+        <float>4</float>
+        <float>4</float>
+        <float>4</float>
+        <float>4</float>
+        <float>4</float>
+        <float>4</float>
+        <float>4</float>
+        <float>4</float>
+        <float>3.9</float>
+        <float>3.9</float>
+        <float>3.9</float>
+        <float>3.9</float>
+        <float>3.9</float>
+        <float>3.9</float>
+        <float>3.9</float>
+        <float>3.9</float>
+        <float>3.9</float>
+        <float>3.9</float>
+        <float>3.9</float>
+        <float>3.9</float>
+        <float>3.9</float>
+        <float>3.9</float>
+        <float>3.9</float>
+        <float>3.9</float>
+        <float>3.80000019</float>
+        <float>3.80000019</float>
+        <float>3.80000019</float>
+        <float>3.80000019</float>
+        <float>3.80000019</float>
+        <float>3.80000019</float>
+        <float>3.80000019</float>
+        <float>3.80000019</float>
+        <float>3.80000019</float>
+        <float>3.80000019</float>
+        <float>3.80000019</float>
+        <float>3.80000019</float>
+        <float>3.80000019</float>
+        <float>3.80000019</float>
+        <float>3.80000019</float>
+        <float>3.80000019</float>
+        <float>3.7</float>
+        <float>3.7</float>
+        <float>3.7</float>
+        <float>3.7</float>
+        <float>3.7</float>
+        <float>3.7</float>
+        <float>3.7</float>
+        <float>3.7</float>
+        <float>3.7</float>
+        <float>3.7</float>
+        <float>3.7</float>
+        <float>3.7</float>
+        <float>3.7</float>
+        <float>3.7</float>
+        <float>3.7</float>
+        <float>3.7</float>
+        <float>3.60000014</float>
+        <float>3.60000014</float>
+        <float>3.60000014</float>
+        <float>3.60000014</float>
+        <float>3.60000014</float>
+        <float>3.60000014</float>
+        <float>3.60000014</float>
+        <float>3.60000014</float>
+        <float>3.60000014</float>
+        <float>3.60000014</float>
+        <float>3.60000014</float>
+        <float>3.60000014</float>
+        <float>3.60000014</float>
+        <float>3.60000014</float>
+        <float>3.60000014</float>
+        <float>3.60000014</float>
+        <float>3.5</float>
+        <float>3.5</float>
+        <float>3.5</float>
+        <float>3.5</float>
+        <float>3.5</float>
+        <float>3.5</float>
+        <float>3.5</float>
+        <float>3.5</float>
+        <float>3.5</float>
+        <float>3.5</float>
+        <float>3.5</float>
+        <float>3.5</float>
+        <float>3.5</float>
+        <float>3.5</float>
+        <float>3.5</float>
+        <float>3.5</float>
+        <float>3.39999986</float>
+        <float>3.39999986</float>
+        <float>3.39999986</float>
+        <float>3.39999986</float>
+        <float>3.39999986</float>
+        <float>3.39999986</float>
+        <float>3.39999986</float>
+        <float>3.39999986</float>
+        <float>3.39999986</float>
+        <float>3.39999986</float>
+        <float>3.39999986</float>
+        <float>3.39999986</float>
+        <float>3.39999986</float>
+        <float>3.39999986</float>
+        <float>3.39999986</float>
+        <float>3.39999986</float>
+        <float>3.3</float>
+        <float>3.3</float>
+        <float>3.3</float>
+        <float>3.3</float>
+        <float>3.3</float>
+        <float>3.3</float>
+        <float>3.3</float>
+        <float>3.3</float>
+        <float>3.3</float>
+        <float>3.3</float>
+        <float>3.3</float>
+        <float>3.3</float>
+        <float>3.3</float>
+        <float>3.3</float>
+        <float>3.3</float>
+        <float>3.3</float>
+        <float>3.19999981</float>
+        <float>3.19999981</float>
+        <float>3.19999981</float>
+        <float>3.19999981</float>
+        <float>3.19999981</float>
+        <float>3.19999981</float>
+        <float>3.19999981</float>
+        <float>3.19999981</float>
+        <float>3.19999981</float>
+        <float>3.19999981</float>
+        <float>3.19999981</float>
+        <float>3.19999981</float>
+        <float>3.19999981</float>
+        <float>3.19999981</float>
+        <float>3.19999981</float>
+        <float>3.19999981</float>
+        <float>3.1</float>
+        <float>3.1</float>
+        <float>3.1</float>
+        <float>3.1</float>
+        <float>3.1</float>
+        <float>3.1</float>
+        <float>3.1</float>
+        <float>3.1</float>
+        <float>3.1</float>
+        <float>3.1</float>
+        <float>3.1</float>
+        <float>3.1</float>
+        <float>3.1</float>
+        <float>3.1</float>
+        <float>3.1</float>
+        <float>3.1</float>
       </output>
       <incVal>0.1</incVal>
       <defaultValue>0</defaultValue>
@@ -25822,298 +25822,298 @@
       <input_1_name>Pri. Load</input_1_name>
       <output_name>Base Adv. Angle(1)</output_name>
       <input_0>
-        <float>500</float>
-        <float>1000</float>
+        <float>300</float>
+        <float>600</float>
+        <float>850</float>
         <float>1500</float>
-        <float>2300</float>
-        <float>2900</float>
-        <float>3400</float>
+        <float>2000</float>
+        <float>2500</float>
+        <float>3000</float>
+        <float>3500</float>
         <float>4000</float>
-        <float>4600</float>
-        <float>5200</float>
-        <float>5700</float>
-        <float>6300</float>
+        <float>4500</float>
+        <float>5000</float>
+        <float>5500</float>
+        <float>6000</float>
+        <float>6500</float>
         <float>7000</float>
         <float>7500</float>
-        <float>8000</float>
-        <float>8500</float>
-        <float>9000</float>
       </input_0>
       <input_1>
-        <float>20</float>
-        <float>26</float>
-        <float>34</float>
+        <float>0</float>
+        <float>14</float>
+        <float>28</float>
+        <float>42</float>
         <float>55</float>
-        <float>75</float>
-        <float>84</float>
-        <float>110</float>
-        <float>130</float>
-        <float>140</float>
-        <float>150</float>
-        <float>160</float>
-        <float>170</float>
-        <float>180</float>
-        <float>200</float>
-        <float>220</float>
-        <float>245</float>
+        <float>69</float>
+        <float>83</float>
+        <float>97</float>
+        <float>111</float>
+        <float>125</float>
+        <float>139</float>
+        <float>153</float>
+        <float>167</float>
+        <float>181</float>
+        <float>195</float>
+        <float>209</float>
       </input_1>
       <output>
-        <float>22.5</float>
-        <float>19.5</float>
-        <float>16.5</float>
-        <float>30</float>
-        <float>35</float>
-        <float>36</float>
+        <float>22</float>
+        <float>23.75</float>
+        <float>25.75</float>
+        <float>27.5</float>
+        <float>25.5</float>
+        <float>29.25</float>
         <float>39</float>
         <float>39</float>
-        <float>39</float>
-        <float>39</float>
-        <float>39</float>
-        <float>39</float>
-        <float>39</float>
-        <float>39.667</float>
-        <float>40.333</float>
-        <float>41</float>
-        <float>22.5</float>
-        <float>19.5</float>
-        <float>16.5</float>
-        <float>29</float>
-        <float>34</float>
-        <float>35</float>
+        <float>38.75</float>
+        <float>38.75</float>
+        <float>38.5</float>
+        <float>38.25</float>
+        <float>38.25</float>
         <float>38</float>
         <float>38</float>
         <float>38</float>
-        <float>38</float>
-        <float>38</float>
-        <float>38</float>
-        <float>38</float>
-        <float>38.667</float>
-        <float>39.333</float>
-        <float>40</float>
-        <float>22.5</float>
-        <float>19.5</float>
-        <float>16.5</float>
-        <float>28</float>
-        <float>34</float>
-        <float>34</float>
-        <float>37</float>
-        <float>37</float>
-        <float>37</float>
-        <float>37</float>
-        <float>37</float>
-        <float>37</float>
-        <float>37</float>
-        <float>37.667</float>
-        <float>38.333</float>
-        <float>39</float>
         <float>22</float>
-        <float>22</float>
-        <float>22</float>
-        <float>22</float>
-        <float>30</float>
-        <float>31</float>
-        <float>33</float>
-        <float>33.502</float>
-        <float>34.005</float>
-        <float>34.424</float>
-        <float>34.926</float>
-        <float>35.512</float>
-        <float>35.931</float>
-        <float>36.7</float>
-        <float>34.333</float>
-        <float>35</float>
-        <float>22</float>
-        <float>22</float>
-        <float>22</float>
-        <float>21</float>
-        <float>28</float>
-        <float>31.043</float>
-        <float>32.609</float>
-        <float>33.004</float>
-        <float>33.399</float>
-        <float>33.728</float>
-        <float>34.123</float>
-        <float>34.584</float>
-        <float>34.913</float>
-        <float>35.575</float>
-        <float>36.238</float>
-        <float>36.9</float>
-        <float>20.691</float>
-        <float>19.709</float>
-        <float>19.889</float>
-        <float>19.315</float>
-        <float>25.382</float>
-        <float>28.925</float>
-        <float>30.235</float>
-        <float>30.885</float>
-        <float>31.535</float>
-        <float>32.077</float>
-        <float>32.727</float>
-        <float>33.485</float>
-        <float>34.027</float>
-        <float>34.685</float>
-        <float>35.342</float>
-        <float>36</float>
-        <float>16.909</float>
-        <float>13.091</float>
-        <float>13.791</float>
-        <float>14.445</float>
-        <float>17.818</float>
-        <float>22.807</float>
-        <float>23.376</float>
-        <float>23.763</float>
-        <float>25.15</float>
-        <float>26.307</float>
-        <float>27.694</float>
-        <float>29.312</float>
-        <float>30.468</float>
-        <float>31.146</float>
-        <float>31.823</float>
-        <float>32.5</float>
-        <float>13.2</float>
-        <float>12.935</float>
-        <float>13.513</float>
-        <float>14.216</float>
-        <float>16.233</float>
-        <float>18.744</float>
-        <float>16.1</float>
-        <float>17.1</float>
-        <float>20.3</float>
-        <float>21.4</float>
-        <float>22.4</float>
-        <float>22.4</float>
-        <float>26.5</float>
-        <float>27.167</float>
-        <float>27.833</float>
+        <float>23.75</float>
+        <float>25.75</float>
         <float>28.5</float>
-        <float>12.9</float>
-        <float>12.857</float>
-        <float>13.373</float>
-        <float>14.101</float>
-        <float>15.441</float>
-        <float>17.713</float>
-        <float>15.73</float>
-        <float>16.406</float>
-        <float>19.588</float>
-        <float>20.542</float>
-        <float>21.542</float>
-        <float>21.616</float>
-        <float>24.896</float>
-        <float>25.564</float>
-        <float>26.232</float>
-        <float>26.9</float>
-        <float>12.5</float>
-        <float>12.78</float>
-        <float>13.234</float>
-        <float>13.986</float>
-        <float>14.649</float>
-        <float>14.682</float>
-        <float>15.36</float>
-        <float>15.712</float>
-        <float>18.876</float>
-        <float>19.684</float>
-        <float>20.684</float>
-        <float>20.832</float>
-        <float>23.292</float>
-        <float>23.961</float>
-        <float>24.631</float>
-        <float>25.3</float>
-        <float>12.2</float>
-        <float>12.702</float>
-        <float>13.095</float>
-        <float>13.871</float>
-        <float>13.856</float>
-        <float>13.651</float>
-        <float>14.99</float>
-        <float>15.018</float>
-        <float>18.164</float>
-        <float>18.826</float>
-        <float>19.826</float>
-        <float>20.048</float>
-        <float>21.688</float>
-        <float>22.359</float>
-        <float>23.029</float>
-        <float>23.7</float>
-        <float>11.8</float>
-        <float>12.624</float>
-        <float>12.956</float>
-        <float>13.756</float>
-        <float>13.064</float>
-        <float>14.62</float>
-        <float>14.62</float>
-        <float>15.324</float>
-        <float>18.452</float>
-        <float>18.968</float>
-        <float>19.968</float>
-        <float>20.264</float>
-        <float>21.084</float>
-        <float>21.756</float>
-        <float>22.428</float>
-        <float>23.1</float>
-        <float>12.627</float>
-        <float>12.1</float>
-        <float>12.789</float>
-        <float>13.522</float>
-        <float>14.1</float>
-        <float>13.337</float>
-        <float>13.337</float>
-        <float>13.947</float>
-        <float>16.925</float>
-        <float>17.372</float>
-        <float>18.372</float>
-        <float>18.629</float>
-        <float>19.339</float>
-        <float>19.993</float>
-        <float>20.646</float>
-        <float>21.3</float>
-        <float>11.818</float>
-        <float>11.513</float>
-        <float>12.454</float>
-        <float>12.1</float>
-        <float>12.2</float>
-        <float>10.772</float>
-        <float>10.772</float>
-        <float>11.194</float>
-        <float>13.871</float>
-        <float>14.181</float>
-        <float>15.181</float>
-        <float>15.358</float>
-        <float>15.85</float>
-        <float>16.534</float>
-        <float>17.217</float>
-        <float>17.9</float>
-        <float>11.01</float>
-        <float>10.84</float>
-        <float>11.674</float>
-        <float>11.167</float>
-        <float>11.381</float>
-        <float>9.832</float>
-        <float>9.991</float>
-        <float>10.385</float>
-        <float>12.031</float>
-        <float>12.336</float>
-        <float>13.051</float>
-        <float>13.335</float>
-        <float>13.741</float>
-        <float>14.253</float>
-        <float>14.766</float>
-        <float>15.278</float>
-        <float>10</float>
-        <float>10</float>
-        <float>10.7</float>
-        <float>10</float>
-        <float>10.358</float>
-        <float>8.657</float>
-        <float>9.015</float>
-        <float>9.373</float>
-        <float>9.731</float>
-        <float>10.03</float>
-        <float>10.388</float>
-        <float>10.806</float>
-        <float>11.104</float>
-        <float>11.403</float>
-        <float>11.701</float>
+        <float>30.5</float>
+        <float>34.25</float>
+        <float>39</float>
+        <float>39</float>
+        <float>38.75</float>
+        <float>38.75</float>
+        <float>38.5</float>
+        <float>38.25</float>
+        <float>38.25</float>
+        <float>38</float>
+        <float>38</float>
+        <float>38</float>
+        <float>21</float>
+        <float>22.75</float>
+        <float>24.25</float>
+        <float>27.5</float>
+        <float>29</float>
+        <float>34.25</float>
+        <float>39.5</float>
+        <float>40.5</float>
+        <float>40.75</float>
+        <float>40.75</float>
+        <float>40.5</float>
+        <float>40.25</float>
+        <float>40.25</float>
+        <float>40</float>
+        <float>39.5</float>
+        <float>39.5</float>
+        <float>20</float>
+        <float>21.75</float>
+        <float>23.75</float>
+        <float>27</float>
+        <float>28</float>
+        <float>33.75</float>
+        <float>40.5</float>
+        <float>41.5</float>
+        <float>42.25</float>
+        <float>42.25</float>
+        <float>42</float>
+        <float>41.75</float>
+        <float>41.75</float>
+        <float>41.5</float>
+        <float>41</float>
+        <float>41</float>
+        <float>18</float>
+        <float>19.75</float>
+        <float>21.25</float>
+        <float>24</float>
+        <float>26.5</float>
+        <float>31.25</float>
+        <float>37.5</float>
+        <float>40.5</float>
+        <float>42.25</float>
+        <float>42.25</float>
+        <float>42</float>
+        <float>41.75</float>
+        <float>41.75</float>
+        <float>41.5</float>
+        <float>41</float>
+        <float>41</float>
+        <float>17</float>
+        <float>18.75</float>
+        <float>18.75</float>
+        <float>22.25</float>
+        <float>25.75</float>
+        <float>28.75</float>
+        <float>32.25</float>
+        <float>35.75</float>
+        <float>37.25</float>
+        <float>37.25</float>
+        <float>37.5</float>
+        <float>37.75</float>
+        <float>38</float>
+        <float>38</float>
+        <float>37.75</float>
+        <float>37.75</float>
+        <float>16</float>
+        <float>17.75</float>
+        <float>17.75</float>
+        <float>20.5</float>
+        <float>23.25</float>
+        <float>25.25</float>
+        <float>27.75</float>
+        <float>29.5</float>
+        <float>30.75</float>
+        <float>31</float>
+        <float>31.5</float>
+        <float>32</float>
+        <float>32.5</float>
+        <float>33</float>
+        <float>33</float>
+        <float>33</float>
+        <float>16</float>
+        <float>17.75</float>
+        <float>16.75</float>
+        <float>19.5</float>
+        <float>20.5</float>
+        <float>22.5</float>
+        <float>25</float>
+        <float>26.75</float>
+        <float>27.5</float>
+        <float>27.75</float>
+        <float>28.25</float>
+        <float>28.75</float>
+        <float>29.5</float>
+        <float>30.25</float>
+        <float>30.5</float>
+        <float>30.5</float>
+        <float>16</float>
+        <float>15.5</float>
+        <float>10.75</float>
+        <float>11.5</float>
+        <float>16</float>
+        <float>18.75</float>
+        <float>20.5</float>
+        <float>21.75</float>
+        <float>22.5</float>
+        <float>22.5</float>
+        <float>23</float>
+        <float>23.75</float>
+        <float>24.5</float>
+        <float>25.25</float>
+        <float>26.25</float>
+        <float>26.25</float>
+        <float>7</float>
+        <float>7.25</float>
+        <float>7.5</float>
+        <float>9.25</float>
         <float>12</float>
+        <float>16.75</float>
+        <float>18.5</float>
+        <float>19.5</float>
+        <float>19.5</float>
+        <float>19.5</float>
+        <float>19.75</float>
+        <float>21.25</float>
+        <float>22.25</float>
+        <float>23</float>
+        <float>24</float>
+        <float>24</float>
+        <float>4.5</float>
+        <float>4.75</float>
+        <float>5.25</float>
+        <float>6.5</float>
+        <float>9</float>
+        <float>15.25</float>
+        <float>18</float>
+        <float>18</float>
+        <float>17.75</float>
+        <float>17.75</float>
+        <float>17.5</float>
+        <float>19.25</float>
+        <float>20.25</float>
+        <float>21</float>
+        <float>22</float>
+        <float>22</float>
+        <float>4</float>
+        <float>3.75</float>
+        <float>4.25</float>
+        <float>4.5</float>
+        <float>6.5</float>
+        <float>14.25</float>
+        <float>16</float>
+        <float>16</float>
+        <float>16.25</float>
+        <float>16.75</float>
+        <float>17</float>
+        <float>18.75</float>
+        <float>18.75</float>
+        <float>20</float>
+        <float>21</float>
+        <float>21</float>
+        <float>3.5</float>
+        <float>3.25</float>
+        <float>3.75</float>
+        <float>3.5</float>
+        <float>6</float>
+        <float>13.25</float>
+        <float>14</float>
+        <float>14</float>
+        <float>14.25</float>
+        <float>14.75</float>
+        <float>15</float>
+        <float>16.75</float>
+        <float>17.75</float>
+        <float>19</float>
+        <float>20</float>
+        <float>20</float>
+        <float>2.5</float>
+        <float>2.25</float>
+        <float>2.75</float>
+        <float>2.5</float>
+        <float>5</float>
+        <float>11.25</float>
+        <float>13</float>
+        <float>13</float>
+        <float>13.25</float>
+        <float>13.75</float>
+        <float>14</float>
+        <float>15.75</float>
+        <float>16.75</float>
+        <float>18</float>
+        <float>19</float>
+        <float>19</float>
+        <float>4</float>
+        <float>3.75</float>
+        <float>3.75</float>
+        <float>2.5</float>
+        <float>5</float>
+        <float>10.25</float>
+        <float>12</float>
+        <float>12</float>
+        <float>12.25</float>
+        <float>12.75</float>
+        <float>13</float>
+        <float>14.75</float>
+        <float>15.75</float>
+        <float>17</float>
+        <float>18</float>
+        <float>18</float>
+        <float>4</float>
+        <float>3.75</float>
+        <float>3.75</float>
+        <float>2.5</float>
+        <float>4</float>
+        <float>9.25</float>
+        <float>11</float>
+        <float>11</float>
+        <float>11.25</float>
+        <float>11.75</float>
+        <float>12</float>
+        <float>13.75</float>
+        <float>14.75</float>
+        <float>16</float>
+        <float>17</float>
+        <float>17</float>
       </output>
       <incVal>1</incVal>
       <defaultValue>0</defaultValue>
@@ -26137,6 +26137,8 @@
       <input_1_name>Sec.. Load</input_1_name>
       <output_name>Base Add. Adv. Angle</output_name>
       <input_0>
+        <float>550</float>
+        <float>551</float>
         <float>1000</float>
         <float>1500</float>
         <float>2000</float>
@@ -26151,44 +26153,42 @@
         <float>6500</float>
         <float>7000</float>
         <float>7600</float>
-        <float>7800</float>
-        <float>8000</float>
       </input_0>
       <input_1>
         <float>0</float>
-        <float>19</float>
-        <float>38</float>
-        <float>55</float>
-        <float>74</float>
-        <float>92</float>
-        <float>111</float>
-        <float>130</float>
-        <float>148</float>
-        <float>167</float>
-        <float>185</float>
-        <float>204</float>
-        <float>222</float>
-        <float>241</float>
-        <float>278</float>
-        <float>300</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
       </input_1>
       <output>
         <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
+        <float>-8</float>
+        <float>-8</float>
+        <float>-8</float>
+        <float>-8</float>
+        <float>-8</float>
+        <float>-8</float>
+        <float>-8</float>
+        <float>-8</float>
+        <float>-8</float>
+        <float>-8</float>
+        <float>-8</float>
+        <float>-8</float>
+        <float>-8</float>
+        <float>-8</float>
+        <float>-8</float>
         <float>0</float>
         <float>0</float>
         <float>0</float>
@@ -26535,18 +26535,18 @@
         <float>0</float>
         <float>0</float>
         <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
+        <float>-0.3</float>
+        <float>-0.7</float>
+        <float>-1.19999993</float>
+        <float>-1.99999988</float>
+        <float>-3</float>
+        <float>-3.75</float>
+        <float>-4.5</float>
+        <float>-5.5</float>
+        <float>-6.5</float>
+        <float>-8</float>
+        <float>-9</float>
+        <float>-9</float>
       </output>
       <incVal>0.1</incVal>
       <defaultValue>0</defaultValue>
@@ -27279,22 +27279,22 @@
         <float>0</float>
       </input_1>
       <output>
-        <float>250</float>
-        <float>250</float>
-        <float>250</float>
-        <float>250</float>
-        <float>250</float>
-        <float>250</float>
-        <float>250</float>
-        <float>250</float>
-        <float>250</float>
-        <float>250</float>
-        <float>250</float>
-        <float>250</float>
-        <float>250</float>
-        <float>250</float>
-        <float>250</float>
-        <float>250</float>
+        <float>300</float>
+        <float>300</float>
+        <float>300</float>
+        <float>300</float>
+        <float>300</float>
+        <float>300</float>
+        <float>300</float>
+        <float>300</float>
+        <float>300</float>
+        <float>300</float>
+        <float>300</float>
+        <float>300</float>
+        <float>300</float>
+        <float>300</float>
+        <float>300</float>
+        <float>300</float>
       </output>
       <incVal>0.1</incVal>
       <defaultValue>0</defaultValue>
@@ -27354,54 +27354,47 @@
         <float>205</float>
       </input_1>
       <output>
-        <float>14.7</float>
-        <float>14.7</float>
-        <float>14.7</float>
-        <float>14.7</float>
-        <float>14.7</float>
-        <float>14.7</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.7</float>
-        <float>14.7</float>
-        <float>14.7</float>
-        <float>14.7</float>
-        <float>14.7</float>
-        <float>14.7</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.7</float>
-        <float>14.7</float>
-        <float>14.7</float>
-        <float>14.7</float>
-        <float>14.7</float>
-        <float>14.7</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
-        <float>14.9</float>
+        <float>14.7000008</float>
+        <float>14.9000006</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>14.7000008</float>
+        <float>14.9000006</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>14.7000008</float>
+        <float>14.9000006</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>14.8</float>
         <float>14.7</float>
         <float>14.7</float>
         <float>14.7</float>
@@ -27409,6 +27402,15 @@
         <float>14.7</float>
         <float>14.7</float>
         <float>14.7</float>
+        <float>14.7000008</float>
+        <float>14.9000006</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>14.8</float>
         <float>14.7</float>
         <float>14.7</float>
         <float>14.7</float>
@@ -27416,152 +27418,166 @@
         <float>14.7</float>
         <float>14.7</float>
         <float>14.7</float>
+        <float>14.7000008</float>
+        <float>14.9000006</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>14.6</float>
+        <float>14.4</float>
+        <float>14.4</float>
+        <float>14.3000011</float>
+        <float>14.2000008</float>
+        <float>14</float>
+        <float>14</float>
+        <float>14</float>
+        <float>14.5</float>
+        <float>14.7000008</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>15</float>
+        <float>14.6</float>
+        <float>14.2999992</float>
+        <float>14.2999992</float>
+        <float>14.2999992</float>
+        <float>14</float>
+        <float>14</float>
+        <float>14</float>
+        <float>14</float>
+        <float>14</float>
+        <float>14.2</float>
+        <float>14.4000006</float>
         <float>14.7</float>
-        <float>14.7</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
-        <float>14.5</float>
+        <float>14.5999994</float>
+        <float>14.5999994</float>
+        <float>14.5999994</float>
         <float>14.5</float>
         <float>14.3</float>
-        <float>14.3</float>
-        <float>14.3</float>
-        <float>14.3</float>
-        <float>14.3</float>
-        <float>14.3</float>
-        <float>14.3</float>
-        <float>14.3</float>
-        <float>14.3</float>
-        <float>14.3</float>
-        <float>14.3</float>
-        <float>14.3</float>
-        <float>14.3</float>
-        <float>14.3</float>
-        <float>14.3</float>
-        <float>14.3</float>
+        <float>14</float>
+        <float>14</float>
+        <float>14</float>
         <float>13.8</float>
-        <float>13.8</float>
-        <float>13.8</float>
-        <float>13.8</float>
-        <float>13.8</float>
-        <float>13.8</float>
-        <float>13.8</float>
-        <float>13.8</float>
-        <float>13.8</float>
-        <float>13.8</float>
-        <float>14.3</float>
-        <float>14.3</float>
-        <float>14.3</float>
-        <float>14.3</float>
-        <float>14.3</float>
-        <float>14.3</float>
-        <float>13.8</float>
-        <float>13.8</float>
-        <float>13.8</float>
-        <float>13.8</float>
-        <float>13.8</float>
-        <float>13.8</float>
-        <float>13.8</float>
-        <float>13.8</float>
-        <float>13.8</float>
-        <float>13.8</float>
+        <float>13.7</float>
+        <float>13.5999994</float>
+        <float>13.5999994</float>
+        <float>13.5999994</float>
+        <float>13.7</float>
+        <float>13.7</float>
+        <float>13.7</float>
+        <float>13.7</float>
+        <float>13.7</float>
+        <float>13.5999994</float>
+        <float>13.5999994</float>
+        <float>13.5999994</float>
+        <float>13.5</float>
+        <float>13.5</float>
+        <float>13.5</float>
+        <float>13.5</float>
+        <float>13.5</float>
+        <float>13.5</float>
+        <float>13.5</float>
+        <float>13.5</float>
         <float>13.2</float>
         <float>13.2</float>
         <float>13.2</float>
         <float>13.2</float>
         <float>13.2</float>
         <float>13.2</float>
-        <float>13.2</float>
-        <float>13.2</float>
-        <float>13.2</float>
-        <float>13.2</float>
-        <float>13.2</float>
-        <float>13.2</float>
-        <float>13.2</float>
-        <float>13.2</float>
-        <float>13.2</float>
-        <float>13.2</float>
-        <float>12.7</float>
-        <float>12.7</float>
-        <float>12.7</float>
-        <float>12.7</float>
-        <float>12.7</float>
-        <float>12.7</float>
-        <float>12.7</float>
-        <float>12.7</float>
-        <float>12.7</float>
-        <float>12.7</float>
-        <float>12.7</float>
-        <float>12.7</float>
-        <float>12.7</float>
-        <float>12.7</float>
-        <float>12.7</float>
-        <float>12.7</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
-        <float>12.4</float>
+        <float>13.0999994</float>
+        <float>13.0999994</float>
+        <float>13.0999994</float>
+        <float>13.0999994</float>
+        <float>13.0999994</float>
+        <float>13.0999994</float>
+        <float>13.0999994</float>
+        <float>13.0999994</float>
+        <float>13.0999994</float>
+        <float>13.0999994</float>
+        <float>13</float>
+        <float>13</float>
+        <float>13</float>
+        <float>12.9</float>
+        <float>12.9</float>
+        <float>12.9</float>
+        <float>12.7999992</float>
+        <float>12.7999992</float>
+        <float>12.7999992</float>
+        <float>12.7999992</float>
+        <float>12.7999992</float>
+        <float>12.7999992</float>
+        <float>12.7999992</float>
+        <float>12.7999992</float>
+        <float>12.7999992</float>
+        <float>12.7999992</float>
+        <float>12.7999992</float>
+        <float>12.7999992</float>
+        <float>12.7999992</float>
+        <float>12.7000008</float>
+        <float>12.7000008</float>
+        <float>12.7000008</float>
+        <float>12.6</float>
+        <float>12.6</float>
+        <float>12.6</float>
+        <float>12.6</float>
+        <float>12.6</float>
+        <float>12.6</float>
+        <float>12.6</float>
+        <float>12.6</float>
+        <float>12.6</float>
+        <float>12.6</float>
+        <float>12.5999994</float>
+        <float>12.5999994</float>
+        <float>12.5999994</float>
+        <float>12.6</float>
+        <float>12.5</float>
+        <float>12.5</float>
+        <float>12.4000006</float>
+        <float>12.4000006</float>
+        <float>12.4000006</float>
+        <float>12.4000006</float>
+        <float>12.4000006</float>
+        <float>12.4000006</float>
+        <float>12.4000006</float>
+        <float>12.4000006</float>
+        <float>12.4000006</float>
+        <float>12.4000006</float>
+        <float>12.1</float>
+        <float>12.1</float>
+        <float>12.1</float>
+        <float>12.1</float>
+        <float>12.1</float>
+        <float>12.1</float>
+        <float>12.1</float>
+        <float>12.1</float>
+        <float>12.1</float>
+        <float>12.1</float>
+        <float>12.1</float>
+        <float>12.1</float>
+        <float>12.1</float>
+        <float>12.1</float>
+        <float>12.1</float>
+        <float>12.1</float>
+        <float>12</float>
+        <float>12</float>
+        <float>12</float>
+        <float>12</float>
+        <float>11.9000006</float>
+        <float>11.9000006</float>
+        <float>11.9000006</float>
+        <float>11.9000006</float>
+        <float>11.9000006</float>
+        <float>11.9000006</float>
+        <float>11.9000006</float>
+        <float>11.9000006</float>
+        <float>11.9000006</float>
+        <float>11.9000006</float>
+        <float>11.9000006</float>
+        <float>11.9000006</float>
         <float>11.8</float>
         <float>11.8</float>
         <float>11.8</float>
@@ -27578,38 +27594,22 @@
         <float>11.8</float>
         <float>11.8</float>
         <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
-        <float>11.8</float>
+        <float>11.7</float>
+        <float>11.7</float>
+        <float>11.7</float>
+        <float>11.7</float>
+        <float>11.7</float>
+        <float>11.7</float>
+        <float>11.7</float>
+        <float>11.7</float>
+        <float>11.7</float>
+        <float>11.7</float>
+        <float>11.7</float>
+        <float>11.7</float>
+        <float>11.7</float>
+        <float>11.7</float>
+        <float>11.7</float>
+        <float>11.7</float>
       </output>
       <incVal>0.1</incVal>
       <defaultValue>0</defaultValue>
@@ -27633,13 +27633,13 @@
       <input_1_name>Pri. Load</input_1_name>
       <output_name>Base VE(1)</output_name>
       <input_0>
-        <float>500</float>
         <float>800</float>
         <float>1100</float>
         <float>1400</float>
-        <float>2000</float>
-        <float>2600</float>
-        <float>3100</float>
+        <float>1900</float>
+        <float>2200</float>
+        <float>2800</float>
+        <float>3300</float>
         <float>3700</float>
         <float>4300</float>
         <float>4900</float>
@@ -27653,278 +27653,278 @@
       <input_1>
         <float>20</float>
         <float>27</float>
-        <float>33</float>
-        <float>45</float>
-        <float>55</float>
-        <float>67</float>
-        <float>80</float>
-        <float>90</float>
-        <float>100</float>
-        <float>115</float>
-        <float>130</float>
-        <float>145</float>
-        <float>160</float>
-        <float>175</float>
-        <float>190</float>
-        <float>205</float>
+        <float>35</float>
+        <float>43</float>
+        <float>51</float>
+        <float>59</float>
+        <float>68</float>
+        <float>77</float>
+        <float>86</float>
+        <float>97</float>
+        <float>108</float>
+        <float>120</float>
+        <float>135</float>
+        <float>150</float>
+        <float>165</float>
+        <float>180</float>
       </input_1>
       <output>
-        <float>27.6</float>
+        <float>27</float>
+        <float>28.5</float>
+        <float>37</float>
+        <float>38</float>
+        <float>35.5</float>
+        <float>32.5</float>
+        <float>32.5</float>
+        <float>32.5</float>
+        <float>33.5</float>
+        <float>33.5</float>
+        <float>33.5</float>
+        <float>33.5</float>
+        <float>33</float>
+        <float>32.5</float>
+        <float>31</float>
+        <float>28.5</float>
+        <float>30.5</float>
         <float>32</float>
-        <float>31.12</float>
-        <float>30.4</float>
-        <float>31.68</float>
-        <float>36</float>
-        <float>37.44</float>
-        <float>31.68</float>
-        <float>33.84</float>
-        <float>38.16</float>
-        <float>41.76</float>
-        <float>42.48</float>
-        <float>39.6</float>
-        <float>36</float>
-        <float>36.72</float>
-        <float>35.28</float>
-        <float>31.64</float>
-        <float>32.76</float>
-        <float>30.4</float>
-        <float>31.84</float>
-        <float>37.728</float>
-        <float>36.528</float>
-        <float>35.592</float>
-        <float>37.44</float>
-        <float>40.32</float>
-        <float>43.92</float>
-        <float>44.64</float>
-        <float>47.52</float>
-        <float>42.48</float>
-        <float>40.32</float>
-        <float>41.76</float>
-        <float>38.16</float>
-        <float>37.08</float>
-        <float>34.856</float>
-        <float>41.064</float>
-        <float>38.72</float>
-        <float>45.68</float>
-        <float>40.2</float>
-        <float>39.68</float>
-        <float>40.32</float>
-        <float>46.8</float>
-        <float>48.96</float>
-        <float>48.24</float>
-        <float>50.4</float>
-        <float>47.52</float>
-        <float>44.64</float>
-        <float>43.92</float>
-        <float>41.76</float>
-        <float>41.08</float>
-        <float>39.8</float>
-        <float>42.96</float>
-        <float>45.36</float>
-        <float>48.2</float>
-        <float>45.92</float>
-        <float>42.64</float>
-        <float>46.08</float>
-        <float>47.52</float>
+        <float>38</float>
+        <float>39</float>
+        <float>36.5</float>
+        <float>33.5</float>
+        <float>33.5</float>
+        <float>33.5</float>
+        <float>34.5</float>
+        <float>34</float>
+        <float>34</float>
+        <float>34</float>
+        <float>33.5</float>
+        <float>32.5</float>
+        <float>31.5</float>
+        <float>29</float>
+        <float>32.5</float>
+        <float>34</float>
+        <float>39</float>
+        <float>40</float>
+        <float>37</float>
+        <float>34</float>
+        <float>34</float>
+        <float>34</float>
+        <float>34.5</float>
+        <float>34</float>
+        <float>34</float>
+        <float>34</float>
+        <float>33.5</float>
+        <float>32.5</float>
+        <float>31</float>
+        <float>29</float>
+        <float>35.5</float>
+        <float>37</float>
+        <float>42.5</float>
+        <float>43.5</float>
+        <float>38.5</float>
+        <float>35.5</float>
+        <float>35.5</float>
+        <float>37</float>
+        <float>38</float>
+        <float>37</float>
+        <float>37</float>
+        <float>37</float>
+        <float>36.5</float>
+        <float>35.5</float>
+        <float>34</float>
+        <float>32</float>
+        <float>40</float>
+        <float>41.5</float>
+        <float>46</float>
+        <float>47</float>
+        <float>41</float>
+        <float>37.5</float>
+        <float>37.5</float>
+        <float>40</float>
+        <float>41.5</float>
+        <float>40.5</float>
+        <float>40.5</float>
+        <float>40.5</float>
+        <float>40</float>
+        <float>39</float>
+        <float>38</float>
+        <float>35.5</float>
+        <float>45</float>
+        <float>46.5</float>
+        <float>48.5</float>
+        <float>49.5</float>
+        <float>43.5</float>
+        <float>40</float>
+        <float>40</float>
+        <float>43</float>
+        <float>45</float>
+        <float>44.5</float>
+        <float>44.5</float>
+        <float>44.5</float>
+        <float>44</float>
+        <float>43</float>
+        <float>42</float>
+        <float>39.5</float>
+        <float>50</float>
+        <float>51.5</float>
+        <float>51</float>
+        <float>52</float>
+        <float>46</float>
+        <float>43.5</float>
+        <float>43.5</float>
+        <float>46.5</float>
+        <float>49.5</float>
+        <float>49</float>
+        <float>49</float>
+        <float>49</float>
+        <float>48.5</float>
+        <float>47.5</float>
+        <float>46.5</float>
+        <float>44</float>
+        <float>53.5</float>
+        <float>55</float>
+        <float>53.5</float>
         <float>54</float>
-        <float>53.28</float>
-        <float>54.72</float>
-        <float>54.72</float>
-        <float>48.96</float>
-        <float>48.24</float>
-        <float>45.36</float>
-        <float>42.52</float>
-        <float>43.24</float>
-        <float>48.24</float>
-        <float>46.08</float>
-        <float>50.36</float>
-        <float>47.36</float>
-        <float>48.08</float>
-        <float>46.8</float>
-        <float>48.96</float>
-        <float>55.44</float>
-        <float>56.16</float>
-        <float>57.6</float>
-        <float>56.88</float>
-        <float>51.84</float>
-        <float>51.12</float>
-        <float>50.4</float>
-        <float>48.442</float>
-        <float>49.046</float>
-        <float>48.931</float>
-        <float>51.347</float>
-        <float>52.169</float>
-        <float>50.122</float>
-        <float>49.727</float>
-        <float>48.597</float>
-        <float>50.838</float>
-        <float>56.742</float>
-        <float>57.819</float>
-        <float>59.328</float>
-        <float>58.539</float>
-        <float>54.259</float>
-        <float>53.62</float>
-        <float>52.9</float>
-        <float>49.44</float>
-        <float>49.92</float>
-        <float>49.68</float>
-        <float>51.72</float>
-        <float>54.128</float>
-        <float>52.032</float>
-        <float>51.512</float>
-        <float>50.544</float>
-        <float>52.872</float>
-        <float>58.152</float>
-        <float>59.616</float>
-        <float>61.2</float>
-        <float>60.336</float>
-        <float>56.88</float>
-        <float>56.328</float>
-        <float>55.608</float>
-        <float>50.208</float>
-        <float>50.592</float>
-        <float>50.256</float>
-        <float>53.776</float>
-        <float>54.635</float>
-        <float>54.501</float>
-        <float>54.885</float>
-        <float>56.042</float>
-        <float>58.437</float>
-        <float>59.237</float>
-        <float>60.998</float>
-        <float>62.64</float>
-        <float>61.718</float>
-        <float>58.896</float>
-        <float>58.411</float>
-        <float>57.691</float>
-        <float>50.976</float>
-        <float>51.264</float>
-        <float>50.832</float>
-        <float>54.832</float>
-        <float>57.142</float>
-        <float>56.97</float>
-        <float>57.258</float>
-        <float>59.539</float>
-        <float>62.002</float>
-        <float>62.322</float>
-        <float>62.381</float>
-        <float>64.08</float>
-        <float>63.101</float>
-        <float>60.912</float>
-        <float>60.494</float>
-        <float>59.774</float>
-        <float>52.128</float>
-        <float>52.272</float>
-        <float>51.696</float>
-        <float>55.416</float>
-        <float>59.403</float>
-        <float>59.173</float>
-        <float>62.317</float>
-        <float>64.786</float>
-        <float>65.349</float>
-        <float>64.949</float>
-        <float>64.454</float>
-        <float>66.24</float>
-        <float>65.174</float>
-        <float>63.936</float>
-        <float>63.619</float>
-        <float>62.899</float>
-        <float>53.28</float>
-        <float>53.28</float>
-        <float>52.56</float>
+        <float>48.5</float>
+        <float>47</float>
+        <float>47</float>
+        <float>50</float>
+        <float>53.5</float>
+        <float>53.5</float>
+        <float>53.5</float>
+        <float>53.5</float>
+        <float>53</float>
+        <float>52</float>
+        <float>51</float>
+        <float>48.5</float>
+        <float>56.5</float>
+        <float>58</float>
         <float>56</float>
-        <float>61.664</float>
-        <float>61.376</float>
-        <float>63.216</float>
-        <float>64.872</float>
-        <float>67.536</float>
-        <float>68.416</float>
-        <float>69.368</float>
-        <float>73.24</float>
-        <float>71.088</float>
-        <float>70.8</float>
-        <float>70.584</float>
-        <float>68.864</float>
+        <float>56</float>
+        <float>51</float>
+        <float>51</float>
+        <float>51</float>
         <float>54</float>
-        <float>55.44</float>
-        <float>54.72</float>
-        <float>55.44</float>
-        <float>64.648</float>
-        <float>65.552</float>
-        <float>65.072</float>
-        <float>65.296</float>
-        <float>67.112</float>
-        <float>68.992</float>
-        <float>69.864</float>
-        <float>76.16</float>
-        <float>76.584</float>
-        <float>77</float>
-        <float>77.008</float>
-        <float>76.008</float>
-        <float>58.32</float>
-        <float>56.16</float>
-        <float>56.88</float>
-        <float>57.6</float>
-        <float>66.24</float>
-        <float>67.36</float>
-        <float>69.16</float>
-        <float>67.6</float>
-        <float>69.92</float>
-        <float>71.8</float>
-        <float>73.96</float>
-        <float>81.4</float>
-        <float>80.68</float>
-        <float>80.24</float>
-        <float>80.68</float>
-        <float>80.68</float>
-        <float>59.76</float>
-        <float>59.04</float>
-        <float>59.04</float>
-        <float>59.04</float>
-        <float>67.96</float>
-        <float>68.36</float>
-        <float>70.88</float>
-        <float>69.04</float>
-        <float>70.92</float>
-        <float>73.24</float>
-        <float>75.84</float>
-        <float>82.28</float>
-        <float>83.28</float>
-        <float>82.28</float>
-        <float>83</float>
-        <float>83.28</float>
-        <float>61.2</float>
-        <float>61.2</float>
-        <float>60.48</float>
-        <float>62.64</float>
-        <float>67.4</float>
-        <float>68.52</float>
-        <float>70.6</float>
-        <float>72.36</float>
-        <float>76.52</float>
-        <float>76.84</float>
-        <float>77.72</float>
-        <float>83.16</float>
-        <float>82.88</float>
-        <float>83.16</float>
-        <float>83.88</float>
-        <float>84.6</float>
-        <float>63.36</float>
-        <float>64.08</float>
-        <float>64.08</float>
-        <float>64.08</float>
+        <float>57.5</float>
+        <float>58.5</float>
+        <float>58</float>
+        <float>58.5</float>
+        <float>58</float>
+        <float>57</float>
+        <float>56</float>
+        <float>53.5</float>
+        <float>59.5</float>
+        <float>61</float>
+        <float>59.5</float>
+        <float>59</float>
+        <float>54.5</float>
+        <float>55.5</float>
+        <float>55.5</float>
+        <float>58.5</float>
+        <float>62</float>
+        <float>63.5</float>
+        <float>62.5</float>
+        <float>63.5</float>
+        <float>63.5</float>
+        <float>62.5</float>
+        <float>61</float>
+        <float>59</float>
+        <float>62.5</float>
+        <float>64</float>
+        <float>63</float>
+        <float>62.5</float>
+        <float>58</float>
+        <float>60.5</float>
+        <float>60.5</float>
+        <float>63</float>
+        <float>66</float>
+        <float>68</float>
         <float>67</float>
-        <float>70.12</float>
-        <float>71.64</float>
-        <float>73.96</float>
-        <float>76.56</float>
-        <float>78.6</float>
-        <float>79.2</float>
-        <float>83.64</float>
-        <float>84.92</float>
-        <float>85.2</float>
-        <float>85.48</float>
-        <float>84.04</float>
+        <float>68.5</float>
+        <float>69.5</float>
+        <float>68.5</float>
+        <float>67</float>
+        <float>65</float>
+        <float>65.5</float>
+        <float>67</float>
+        <float>67</float>
+        <float>66.5</float>
+        <float>62</float>
+        <float>66</float>
+        <float>66</float>
+        <float>67.5</float>
+        <float>70.5</float>
+        <float>74</float>
+        <float>71.5</float>
+        <float>73.5</float>
+        <float>75</float>
+        <float>74.5</float>
+        <float>73</float>
+        <float>70.5</float>
+        <float>68.5</float>
+        <float>70</float>
+        <float>72</float>
+        <float>71.5</float>
+        <float>67</float>
+        <float>71</float>
+        <float>71</float>
+        <float>72</float>
+        <float>75</float>
+        <float>79.5</float>
+        <float>76</float>
+        <float>78.5</float>
+        <float>81</float>
+        <float>80</float>
+        <float>79</float>
+        <float>76.5</float>
+        <float>71.5</float>
+        <float>73</float>
+        <float>76</float>
+        <float>75.5</float>
+        <float>71</float>
+        <float>75</float>
+        <float>75</float>
+        <float>75.5</float>
+        <float>79</float>
+        <float>84.5</float>
+        <float>80.5</float>
+        <float>83</float>
+        <float>86</float>
+        <float>85</float>
+        <float>83.5</float>
+        <float>81.5</float>
+        <float>74</float>
+        <float>75.5</float>
+        <float>79.5</float>
+        <float>79</float>
+        <float>74.5</float>
+        <float>78.5</float>
+        <float>78.5</float>
+        <float>79</float>
+        <float>82.5</float>
+        <float>88</float>
+        <float>83.5</float>
+        <float>86</float>
+        <float>89</float>
+        <float>88</float>
+        <float>87</float>
+        <float>84.5</float>
+        <float>76</float>
+        <float>77.5</float>
+        <float>82</float>
+        <float>81.5</float>
+        <float>77</float>
+        <float>81</float>
+        <float>81</float>
+        <float>81.5</float>
+        <float>85</float>
+        <float>90.5</float>
+        <float>86.5</float>
+        <float>88.5</float>
+        <float>92</float>
+        <float>91</float>
+        <float>89.5</float>
+        <float>87.5</float>
       </output>
       <incVal>1</incVal>
       <defaultValue>0</defaultValue>
@@ -28283,19 +28283,19 @@
         <float>0</float>
       </input_1>
       <output>
-        <float>2.99</float>
-        <float>2.5</float>
-        <float>2</float>
-        <float>1.726</float>
-        <float>1.483</float>
-        <float>1.406</float>
-        <float>1.329</float>
-        <float>1.23</float>
-        <float>1.153</float>
-        <float>1.064</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
+        <float>1.47</float>
+        <float>1.42</float>
+        <float>1.37</float>
+        <float>1.32</float>
+        <float>1.27</float>
+        <float>1.22</float>
+        <float>1.17</float>
+        <float>1.12</float>
+        <float>1.08</float>
+        <float>1.05</float>
+        <float>1.03</float>
+        <float>1.02</float>
+        <float>1.01</float>
         <float>1</float>
         <float>1</float>
         <float>1</float>
@@ -28342,22 +28342,22 @@
         <float>0</float>
       </input_1>
       <output>
-        <float>1.113</float>
-        <float>1.113</float>
-        <float>1.113</float>
-        <float>1.113</float>
-        <float>1.086</float>
-        <float>1.063</float>
-        <float>1.035</float>
-        <float>1.012</float>
-        <float>0.988</float>
-        <float>0.965</float>
-        <float>0.965</float>
-        <float>0.965</float>
-        <float>0.965</float>
-        <float>0.965</float>
-        <float>0.965</float>
-        <float>0.965</float>
+        <float>0.8233216</float>
+        <float>0.858657241</float>
+        <float>0.89399296</float>
+        <float>0.95</float>
+        <float>0.97</float>
+        <float>0.99</float>
+        <float>1.01</float>
+        <float>1.03</float>
+        <float>1.05</float>
+        <float>1.07</float>
+        <float>1.09</float>
+        <float>1.11</float>
+        <float>1.13</float>
+        <float>1.15</float>
+        <float>1.17</float>
+        <float>1.21</float>
       </output>
       <incVal>0.001</incVal>
       <defaultValue>0</defaultValue>
@@ -28381,42 +28381,42 @@
       <output_name>Enrich.</output_name>
       <input_0>
         <float>0</float>
-        <float>250</float>
-        <float>500</float>
+        <float>150</float>
+        <float>375</float>
         <float>750</float>
-        <float>1000</float>
+        <float>1125</float>
         <float>1500</float>
         <float>2000</float>
-        <float>2000</float>
-        <float>2000</float>
-        <float>2000</float>
-        <float>2000</float>
-        <float>2000</float>
-        <float>2000</float>
-        <float>2000</float>
-        <float>2000</float>
-        <float>2000</float>
+        <float>2500</float>
+        <float>3000</float>
+        <float>3500</float>
+        <float>4000</float>
+        <float>4000</float>
+        <float>4000</float>
+        <float>4000</float>
+        <float>4000</float>
+        <float>4000</float>
       </input_0>
       <input_1>
         <float>0</float>
       </input_1>
       <output>
-        <float>1.037</float>
-        <float>1.105</float>
-        <float>1.151</float>
-        <float>1.243</float>
-        <float>1.38</float>
-        <float>1.782</float>
-        <float>3.11</float>
-        <float>3.11</float>
-        <float>3.11</float>
-        <float>3.11</float>
-        <float>3.11</float>
+        <float>0</float>
+        <float>0.45</float>
+        <float>0.85</float>
+        <float>1.15</float>
+        <float>1.3</float>
+        <float>1.4</float>
         <float>1.5</float>
-        <float>1.5</float>
-        <float>1.5</float>
-        <float>1.5</float>
-        <float>1.5</float>
+        <float>1.55</float>
+        <float>1.58</float>
+        <float>1.6</float>
+        <float>1.6</float>
+        <float>1.6</float>
+        <float>1.6</float>
+        <float>1.6</float>
+        <float>1.6</float>
+        <float>1.6</float>
       </output>
       <incVal>0.1</incVal>
       <defaultValue>0</defaultValue>
@@ -28616,43 +28616,43 @@
       <input_0_name>Batt. Voltage</input_0_name>
       <output_name>Inj. Dead Time Add</output_name>
       <input_0>
-        <float>12</float>
-        <float>13</float>
-        <float>14</float>
+        <float>6</float>
+        <float>8</float>
+        <float>10</float>
+        <float>11.5</float>
+        <float>12.5</float>
+        <float>13.2</float>
+        <float>13.8</float>
+        <float>14.2</float>
         <float>15</float>
-        <float>15</float>
-        <float>15</float>
-        <float>15</float>
-        <float>15</float>
-        <float>15</float>
-        <float>15</float>
-        <float>15</float>
-        <float>15</float>
-        <float>15</float>
-        <float>15</float>
-        <float>15</float>
-        <float>15</float>
+        <float>16</float>
+        <float>16</float>
+        <float>16</float>
+        <float>16</float>
+        <float>16</float>
+        <float>16</float>
+        <float>16</float>
       </input_0>
       <input_1>
         <float>0</float>
       </input_1>
       <output>
+        <float>4.79</float>
+        <float>2.06</float>
+        <float>1.39</float>
+        <float>1.09</float>
+        <float>0.92</float>
+        <float>0.82</float>
+        <float>0.75</float>
         <float>0.7</float>
-        <float>0.7</float>
-        <float>0.7</float>
-        <float>0.7</float>
-        <float>0.7</float>
-        <float>0.7</float>
-        <float>0.7</float>
-        <float>0.7</float>
-        <float>0.7</float>
-        <float>0.7</float>
-        <float>0.7</float>
-        <float>0.7</float>
-        <float>0.7</float>
-        <float>0.7</float>
-        <float>0.7</float>
-        <float>0.7</float>
+        <float>0.62</float>
+        <float>0.53</float>
+        <float>0.53</float>
+        <float>0.53</float>
+        <float>0.53</float>
+        <float>0.53</float>
+        <float>0.53</float>
+        <float>0.53</float>
       </output>
       <incVal>0.1</incVal>
       <defaultValue>0</defaultValue>
@@ -29797,43 +29797,43 @@
       <input_0_name>CLT</input_0_name>
       <output_name>Priming Pulse</output_name>
       <input_0>
-        <float>-40</float>
         <float>-20</float>
+        <float>-10</float>
         <float>0</float>
+        <float>10</float>
         <float>20</float>
         <float>30</float>
         <float>40</float>
         <float>50</float>
         <float>60</float>
         <float>70</float>
-        <float>75</float>
         <float>80</float>
-        <float>85</float>
         <float>90</float>
-        <float>95</float>
         <float>100</float>
-        <float>140</float>
+        <float>110</float>
+        <float>120</float>
+        <float>130</float>
       </input_0>
       <input_1>
         <float>0</float>
       </input_1>
       <output>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>82.9</float>
+        <float>65.8</float>
+        <float>48.7</float>
+        <float>31.6</float>
+        <float>19</float>
+        <float>7.5</float>
+        <float>7.5</float>
+        <float>7.5</float>
+        <float>7.5</float>
+        <float>7.5</float>
       </output>
       <incVal>0.1</incVal>
       <defaultValue>0</defaultValue>
@@ -30033,10 +30033,12 @@
       <input_0_name>RPM</input_0_name>
       <output_name>RPM Clamp Trim</output_name>
       <input_0>
-        <float>1000</float>
-        <float>1500</float>
+        <float>599</float>
+        <float>600</float>
+        <float>750</float>
+        <float>850</float>
+        <float>1400</float>
         <float>2000</float>
-        <float>2500</float>
         <float>3000</float>
         <float>3500</float>
         <float>4000</float>
@@ -30047,14 +30049,12 @@
         <float>6500</float>
         <float>7000</float>
         <float>7600</float>
-        <float>7800</float>
-        <float>8000</float>
       </input_0>
       <input_1>
         <float>0</float>
       </input_1>
       <output>
-        <float>1</float>
+        <float>0</float>
         <float>1</float>
         <float>1</float>
         <float>1</float>
@@ -30062,14 +30062,14 @@
         <float>1</float>
         <float>0.8</float>
         <float>0.7</float>
-        <float>0.5</float>
-        <float>0.5</float>
-        <float>0.5</float>
-        <float>0.5</float>
-        <float>0.5</float>
-        <float>0.5</float>
-        <float>0.5</float>
-        <float>0.5</float>
+        <float>0.6</float>
+        <float>0.6</float>
+        <float>0.6</float>
+        <float>0.6</float>
+        <float>0.6</float>
+        <float>0.6</float>
+        <float>0.6</float>
+        <float>0.6</float>
       </output>
       <incVal>0.1</incVal>
       <defaultValue>0</defaultValue>
@@ -30165,29 +30165,29 @@
         <float>70</float>
         <float>80</float>
         <float>90</float>
-        <float>100</float>
-        <float>120</float>
+        <float>105</float>
+        <float>115</float>
       </input_0>
       <input_1>
         <float>0</float>
       </input_1>
       <output>
+        <float>5000</float>
+        <float>5000</float>
+        <float>5000</float>
+        <float>5000</float>
+        <float>5000</float>
+        <float>5250</float>
+        <float>5500</float>
+        <float>5750</float>
+        <float>6000</float>
         <float>6500</float>
-        <float>6500</float>
-        <float>6500</float>
-        <float>6500</float>
-        <float>6500</float>
-        <float>6500</float>
-        <float>6852.457</float>
-        <float>7090.909</float>
-        <float>7417.516</float>
-        <float>7454.437</float>
-        <float>7402.099</float>
-        <float>7402.099</float>
-        <float>7402.099</float>
-        <float>7444.379</float>
-        <float>7402.099</float>
-        <float>7300</float>
+        <float>7000</float>
+        <float>7200</float>
+        <float>7400</float>
+        <float>7400</float>
+        <float>7400</float>
+        <float>5000</float>
       </output>
       <incVal>0.1</incVal>
       <defaultValue>0</defaultValue>
@@ -30210,13 +30210,13 @@
       <input_0_name>Target RPM Error</input_0_name>
       <output_name>Ign Add</output_name>
       <input_0>
-        <float>-300</float>
         <float>-260</float>
         <float>-220</float>
         <float>-180</float>
         <float>-140</float>
         <float>-100</float>
         <float>-60</float>
+        <float>-20</float>
         <float>0</float>
         <float>20</float>
         <float>60</float>
@@ -30231,19 +30231,19 @@
         <float>0</float>
       </input_1>
       <output>
-        <float>10</float>
-        <float>8.667</float>
-        <float>7.333</float>
-        <float>6</float>
-        <float>4.667</float>
-        <float>3.333</float>
-        <float>2</float>
+        <float>12</float>
+        <float>12</float>
+        <float>12</float>
+        <float>12</float>
+        <float>8</float>
+        <float>4</float>
+        <float>1</float>
         <float>0</float>
-        <float>-1.111</float>
-        <float>-3.333</float>
-        <float>-5.556</float>
-        <float>-7.778</float>
-        <float>-10</float>
+        <float>-1</float>
+        <float>-4</float>
+        <float>-8</float>
+        <float>-12</float>
+        <float>-15</float>
         <float>-20</float>
         <float>-20</float>
         <float>-20</float>
@@ -30290,22 +30290,22 @@
         <float>0</float>
       </input_1>
       <output>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>23.7</float>
-        <float>22.4</float>
-        <float>21.75</float>
-        <float>21.1</float>
-        <float>20.8</float>
-        <float>20.48</float>
-        <float>20.1</float>
-        <float>20.1</float>
-        <float>20</float>
+        <float>43.35</float>
+        <float>43.35</float>
+        <float>42.6</float>
+        <float>41.1</float>
+        <float>39.6</float>
+        <float>38.1</float>
+        <float>35.85</float>
+        <float>33.9</float>
+        <float>31.95</float>
+        <float>30.9749985</float>
+        <float>30.3</float>
+        <float>30</float>
+        <float>30</float>
+        <float>30</float>
+        <float>30</float>
+        <float>30</float>
       </output>
       <incVal>0.1</incVal>
       <defaultValue>0</defaultValue>
@@ -30343,28 +30343,28 @@
         <float>90</float>
         <float>95</float>
         <float>100</float>
-        <float>140</float>
+        <float>120</float>
       </input_0>
       <input_1>
         <float>0</float>
       </input_1>
       <output>
-        <float>1320.759</float>
-        <float>1296.221</float>
+        <float>1450</float>
+        <float>1400</float>
+        <float>1350</float>
         <float>1300</float>
-        <float>1300</float>
-        <float>1266.2</float>
-        <float>1224.026</float>
-        <float>1176.541</float>
-        <float>1110.063</float>
-        <float>1073.291</float>
-        <float>1068.056</float>
-        <float>1062.821</float>
-        <float>1057.586</float>
-        <float>1052.351</float>
-        <float>1047.116</float>
-        <float>1041.881</float>
+        <float>1250</float>
+        <float>1200</float>
+        <float>1100</float>
         <float>1000</float>
+        <float>933.3333</float>
+        <float>900</float>
+        <float>900</float>
+        <float>900</float>
+        <float>900</float>
+        <float>900</float>
+        <float>900</float>
+        <float>998.6925</float>
       </output>
       <incVal>0.1</incVal>
       <defaultValue>0</defaultValue>
@@ -33536,6 +33536,7 @@
         <float>8000</float>
       </input_0>
       <input_1>
+        <float>0</float>
         <float>20</float>
         <float>25</float>
         <float>30</float>
@@ -33551,265 +33552,264 @@
         <float>90</float>
         <float>95</float>
         <float>100</float>
-        <float>110</float>
       </input_1>
       <output>
         <float>0</float>
-        <float>10</float>
-        <float>27.5</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>35</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
+        <float>5</float>
+        <float>5</float>
+        <float>5</float>
+        <float>5</float>
+        <float>5</float>
+        <float>5</float>
+        <float>3</float>
+        <float>3</float>
+        <float>1</float>
         <float>0</float>
-        <float>10</float>
-        <float>27.5</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>35</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
         <float>0</float>
-        <float>10</float>
-        <float>27.5</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>35</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
         <float>0</float>
-        <float>10</float>
-        <float>27.5</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>35</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
         <float>0</float>
-        <float>10</float>
-        <float>27.5</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>35</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
         <float>0</float>
-        <float>10</float>
-        <float>27.5</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>35</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
         <float>0</float>
-        <float>10</float>
-        <float>27.5</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>35</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
         <float>0</float>
-        <float>10</float>
-        <float>27.5</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>35</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
+        <float>5</float>
+        <float>5</float>
+        <float>5</float>
+        <float>5</float>
+        <float>5</float>
+        <float>5</float>
+        <float>5.33333349</float>
+        <float>3.66666675</float>
+        <float>1.66666675</float>
         <float>0</float>
-        <float>10</float>
-        <float>27.5</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>35</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
         <float>0</float>
-        <float>10</float>
-        <float>27.5</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>35</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
         <float>0</float>
-        <float>10</float>
-        <float>27.5</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>35</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
         <float>0</float>
-        <float>10</float>
-        <float>27.5</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>35</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
         <float>0</float>
-        <float>10</float>
-        <float>27.5</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>35</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
         <float>0</float>
-        <float>10</float>
-        <float>27.5</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>35</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
         <float>0</float>
+        <float>5</float>
+        <float>5.625</float>
+        <float>5.625</float>
+        <float>5.625</float>
+        <float>6.25</float>
+        <float>6.25</float>
+        <float>5.91666651</float>
+        <float>3.83333325</float>
+        <float>1.83333325</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>5</float>
+        <float>6.25</float>
+        <float>6.25</float>
+        <float>6.25</float>
+        <float>7.5</float>
+        <float>7.5</float>
+        <float>6.5</float>
+        <float>4</float>
+        <float>2</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>5</float>
+        <float>6.875</float>
+        <float>6.875</float>
+        <float>6.875</float>
+        <float>8.75</float>
+        <float>8.75</float>
+        <float>7.083333</float>
+        <float>4.16666651</float>
+        <float>2.16666651</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>5</float>
+        <float>7.5</float>
+        <float>7.5</float>
+        <float>7.5</float>
         <float>10</float>
-        <float>27.5</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
+        <float>10</float>
+        <float>7.666667</float>
+        <float>4.33333349</float>
+        <float>2.33333349</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>5</float>
+        <float>8.75</float>
+        <float>8.75</float>
+        <float>8.75</float>
+        <float>12.5</float>
+        <float>12.5</float>
+        <float>8.833333</float>
+        <float>4.66666651</float>
+        <float>2.66666651</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>5</float>
+        <float>10</float>
+        <float>10</float>
+        <float>10</float>
+        <float>15</float>
+        <float>15</float>
+        <float>10</float>
+        <float>5</float>
+        <float>3</float>
+        <float>2.22222233</float>
+        <float>1.11111116</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>5</float>
+        <float>13.5714283</float>
+        <float>13.5714283</float>
+        <float>12.8571434</float>
+        <float>18.5714283</float>
+        <float>18.5714283</float>
+        <float>12.5714283</float>
+        <float>6.857143</float>
+        <float>4.714286</float>
+        <float>3.33333349</float>
+        <float>1.66666675</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>5</float>
+        <float>17.1428566</float>
+        <float>17.1428566</float>
+        <float>15.7142859</float>
+        <float>22.1428566</float>
+        <float>22.1428566</float>
+        <float>15.1428576</float>
+        <float>8.714286</float>
+        <float>6.4285717</float>
+        <float>4.44444466</float>
+        <float>2.22222233</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>5</float>
+        <float>20.7142868</float>
+        <float>20.7142868</float>
+        <float>18.5714283</float>
+        <float>25.7142868</float>
+        <float>25.7142868</float>
+        <float>17.7142868</float>
+        <float>10.5714283</float>
+        <float>8.142857</float>
+        <float>5.555556</float>
+        <float>2.777778</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>5</float>
+        <float>24.2857151</float>
+        <float>24.2857151</float>
+        <float>21.4285717</float>
+        <float>29.2857151</float>
+        <float>29.2857151</float>
+        <float>20.2857151</float>
+        <float>12.4285717</float>
+        <float>9.857143</float>
+        <float>6.666667</float>
+        <float>3.33333349</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>5</float>
+        <float>27.8571434</float>
+        <float>27.8571434</float>
+        <float>24.2857151</float>
+        <float>32.8571434</float>
+        <float>32.8571434</float>
+        <float>22.8571434</float>
+        <float>14.2857141</float>
+        <float>11.5714283</float>
+        <float>7.77777767</float>
+        <float>3.88888884</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>5</float>
+        <float>31.4285717</float>
+        <float>31.4285717</float>
+        <float>27.1428566</float>
+        <float>36.4285736</float>
+        <float>36.4285736</float>
+        <float>25.4285717</float>
+        <float>16.1428566</float>
+        <float>13.2857141</float>
+        <float>8.888889</float>
+        <float>4.44444466</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>5</float>
         <float>35</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
+        <float>35</float>
         <float>30</float>
-        <float>30</float>
-        <float>37.5</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
-        <float>45</float>
+        <float>40</float>
+        <float>40</float>
+        <float>28</float>
+        <float>18</float>
+        <float>15</float>
+        <float>10</float>
+        <float>5</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>5</float>
         <float>35</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
-        <float>25</float>
+        <float>35</float>
+        <float>30</float>
+        <float>40</float>
+        <float>40</float>
+        <float>28</float>
+        <float>18</float>
+        <float>15</float>
+        <float>10</float>
+        <float>5</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
       </output>
       <incVal>1</incVal>
       <defaultValue>0</defaultValue>
@@ -34149,43 +34149,44 @@
       <output_name>Out</output_name>
       <input_0>
         <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
+        <float>1</float>
+        <float>2</float>
+        <float>3</float>
+        <float>4</float>
+        <float>5</float>
+        <float>6</float>
+        <float>7</float>
+        <float>7</float>
+        <float>7</float>
+        <float>7</float>
+        <float>7</float>
+        <float>7</float>
+        <float>7</float>
+        <float>7</float>
+        <float>7</float>
       </input_0>
       <input_1>
+        <float>-100</float>
+        <float>-60</float>
+        <float>-40</float>
+        <float>-20</float>
         <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
+        <float>20</float>
+        <float>40</float>
+        <float>60</float>
+        <float>80</float>
+        <float>100</float>
+        <float>120</float>
+        <float>140</float>
+        <float>160</float>
+        <float>180</float>
+        <float>200</float>
+        <float>220</float>
       </input_1>
       <output>
         <float>0</float>
         <float>0</float>
+        <float>10</float>
         <float>0</float>
         <float>0</float>
         <float>0</float>
@@ -34201,6 +34202,7 @@
         <float>0</float>
         <float>0</float>
         <float>0</float>
+        <float>6</float>
         <float>0</float>
         <float>0</float>
         <float>0</float>
@@ -34216,6 +34218,7 @@
         <float>0</float>
         <float>0</float>
         <float>0</float>
+        <float>4</float>
         <float>0</float>
         <float>0</float>
         <float>0</float>
@@ -34231,6 +34234,7 @@
         <float>0</float>
         <float>0</float>
         <float>0</float>
+        <float>2</float>
         <float>0</float>
         <float>0</float>
         <float>0</float>
@@ -34262,6 +34266,7 @@
         <float>0</float>
         <float>0</float>
         <float>0</float>
+        <float>-2</float>
         <float>0</float>
         <float>0</float>
         <float>0</float>
@@ -34277,6 +34282,7 @@
         <float>0</float>
         <float>0</float>
         <float>0</float>
+        <float>-4</float>
         <float>0</float>
         <float>0</float>
         <float>0</float>
@@ -34292,6 +34298,7 @@
         <float>0</float>
         <float>0</float>
         <float>0</float>
+        <float>-6</float>
         <float>0</float>
         <float>0</float>
         <float>0</float>
@@ -34307,6 +34314,7 @@
         <float>0</float>
         <float>0</float>
         <float>0</float>
+        <float>-8</float>
         <float>0</float>
         <float>0</float>
         <float>0</float>
@@ -34322,6 +34330,7 @@
         <float>0</float>
         <float>0</float>
         <float>0</float>
+        <float>-10</float>
         <float>0</float>
         <float>0</float>
         <float>0</float>
@@ -34337,6 +34346,7 @@
         <float>0</float>
         <float>0</float>
         <float>0</float>
+        <float>-12</float>
         <float>0</float>
         <float>0</float>
         <float>0</float>
@@ -34352,6 +34362,7 @@
         <float>0</float>
         <float>0</float>
         <float>0</float>
+        <float>-14</float>
         <float>0</float>
         <float>0</float>
         <float>0</float>
@@ -34367,6 +34378,7 @@
         <float>0</float>
         <float>0</float>
         <float>0</float>
+        <float>-16</float>
         <float>0</float>
         <float>0</float>
         <float>0</float>
@@ -34382,6 +34394,7 @@
         <float>0</float>
         <float>0</float>
         <float>0</float>
+        <float>-18</float>
         <float>0</float>
         <float>0</float>
         <float>0</float>
@@ -34397,6 +34410,7 @@
         <float>0</float>
         <float>0</float>
         <float>0</float>
+        <float>-20</float>
         <float>0</float>
         <float>0</float>
         <float>0</float>
@@ -34412,21 +34426,7 @@
         <float>0</float>
         <float>0</float>
         <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
+        <float>-22</float>
         <float>0</float>
         <float>0</float>
         <float>0</float>
@@ -34464,39 +34464,39 @@
       <output_name>Out</output_name>
       <input_0>
         <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
+        <float>6.667</float>
+        <float>13.333</float>
+        <float>20</float>
+        <float>26.667</float>
+        <float>33.333</float>
+        <float>40</float>
+        <float>46.667</float>
+        <float>53.333</float>
+        <float>60</float>
+        <float>66.667</float>
+        <float>73.333</float>
+        <float>80</float>
+        <float>86.667</float>
+        <float>93.333</float>
+        <float>100</float>
       </input_0>
       <input_1>
         <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
+        <float>6.667</float>
+        <float>13.333</float>
+        <float>20</float>
+        <float>26.667</float>
+        <float>33.333</float>
+        <float>40</float>
+        <float>46.667</float>
+        <float>53.333</float>
+        <float>60</float>
+        <float>66.667</float>
+        <float>73.333</float>
+        <float>80</float>
+        <float>86.667</float>
+        <float>93.333</float>
+        <float>100</float>
       </input_1>
       <output>
         <float>0</float>
@@ -34522,239 +34522,239 @@
         <float>0</float>
         <float>0</float>
         <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
-        <float>0</float>
+        <float>3.334</float>
+        <float>10</float>
+        <float>16.667</float>
+        <float>23.334</float>
+        <float>30</float>
+        <float>36.667</float>
+        <float>43.334</float>
+        <float>50</float>
+        <float>56.667</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>3.333</float>
+        <float>10</float>
+        <float>16.666</float>
+        <float>23.333</float>
+        <float>30</float>
+        <float>36.666</float>
+        <float>43.333</float>
+        <float>50</float>
+        <float>56.666</float>
+        <float>63.333</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>3.333</float>
+        <float>10</float>
+        <float>16.667</float>
+        <float>23.333</float>
+        <float>30</float>
+        <float>36.667</float>
+        <float>43.333</float>
+        <float>50</float>
+        <float>56.667</float>
+        <float>63.333</float>
+        <float>70</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>3.334</float>
+        <float>10</float>
+        <float>16.667</float>
+        <float>23.334</float>
+        <float>30</float>
+        <float>36.667</float>
+        <float>43.334</float>
+        <float>50</float>
+        <float>56.667</float>
+        <float>63.334</float>
+        <float>70</float>
+        <float>76.667</float>
+        <float>0</float>
+        <float>0</float>
+        <float>0</float>
+        <float>3.333</float>
+        <float>10</float>
+        <float>16.666</float>
+        <float>23.333</float>
+        <float>30</float>
+        <float>36.666</float>
+        <float>43.333</float>
+        <float>50</float>
+        <float>56.666</float>
+        <float>63.333</float>
+        <float>70</float>
+        <float>76.666</float>
+        <float>83.333</float>
+        <float>0</float>
+        <float>0</float>
+        <float>3.333</float>
+        <float>10</float>
+        <float>16.667</float>
+        <float>23.333</float>
+        <float>30</float>
+        <float>36.667</float>
+        <float>43.333</float>
+        <float>50</float>
+        <float>56.667</float>
+        <float>63.333</float>
+        <float>70</float>
+        <float>76.667</float>
+        <float>83.333</float>
+        <float>90</float>
+        <float>0</float>
+        <float>3.334</float>
+        <float>10</float>
+        <float>16.667</float>
+        <float>23.334</float>
+        <float>30</float>
+        <float>36.667</float>
+        <float>43.334</float>
+        <float>50</float>
+        <float>56.667</float>
+        <float>63.334</float>
+        <float>70</float>
+        <float>76.667</float>
+        <float>83.334</float>
+        <float>90</float>
+        <float>96.667</float>
+        <float>0</float>
+        <float>10</float>
+        <float>16.666</float>
+        <float>23.333</float>
+        <float>30</float>
+        <float>36.666</float>
+        <float>43.333</float>
+        <float>50</float>
+        <float>56.666</float>
+        <float>63.333</float>
+        <float>70</float>
+        <float>76.666</float>
+        <float>83.333</float>
+        <float>90</float>
+        <float>96.666</float>
+        <float>100</float>
+        <float>0</float>
+        <float>16.667</float>
+        <float>23.333</float>
+        <float>30</float>
+        <float>36.667</float>
+        <float>43.333</float>
+        <float>50</float>
+        <float>56.667</float>
+        <float>63.333</float>
+        <float>70</float>
+        <float>76.667</float>
+        <float>83.333</float>
+        <float>90</float>
+        <float>96.667</float>
+        <float>100</float>
+        <float>100</float>
+        <float>0</float>
+        <float>23.334</float>
+        <float>30</float>
+        <float>36.667</float>
+        <float>43.334</float>
+        <float>50</float>
+        <float>56.667</float>
+        <float>63.334</float>
+        <float>70</float>
+        <float>76.667</float>
+        <float>83.334</float>
+        <float>90</float>
+        <float>96.667</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>0</float>
+        <float>30</float>
+        <float>36.666</float>
+        <float>43.333</float>
+        <float>50</float>
+        <float>56.666</float>
+        <float>63.333</float>
+        <float>70</float>
+        <float>76.666</float>
+        <float>83.333</float>
+        <float>90</float>
+        <float>96.666</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>0</float>
+        <float>36.667</float>
+        <float>43.333</float>
+        <float>50</float>
+        <float>56.667</float>
+        <float>63.333</float>
+        <float>70</float>
+        <float>76.667</float>
+        <float>83.333</float>
+        <float>90</float>
+        <float>96.667</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>0</float>
+        <float>43.334</float>
+        <float>50</float>
+        <float>56.667</float>
+        <float>63.334</float>
+        <float>70</float>
+        <float>76.667</float>
+        <float>83.334</float>
+        <float>90</float>
+        <float>96.667</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>0</float>
+        <float>50</float>
+        <float>56.666</float>
+        <float>63.333</float>
+        <float>70</float>
+        <float>76.666</float>
+        <float>83.333</float>
+        <float>90</float>
+        <float>96.666</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>0</float>
+        <float>56.667</float>
+        <float>63.333</float>
+        <float>70</float>
+        <float>76.667</float>
+        <float>83.333</float>
+        <float>90</float>
+        <float>96.667</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
+        <float>100</float>
       </output>
       <incVal>0.1</incVal>
       <defaultValue>0</defaultValue>
@@ -35269,21 +35269,21 @@
       <input_0_name>TPS</input_0_name>
       <output_name>Equiv. Load</output_name>
       <input_0>
-        <float>0</float>
+        <float>0.5</float>
+        <float>1.05</float>
+        <float>1.9</float>
+        <float>3</float>
+        <float>4.4</float>
+        <float>5.9</float>
+        <float>7.8</float>
         <float>10</float>
-        <float>20</float>
-        <float>30</float>
-        <float>35</float>
+        <float>12.5999994</float>
+        <float>15.7</float>
+        <float>19.5</float>
+        <float>24.4</float>
+        <float>30.8</float>
         <float>40</float>
-        <float>50</float>
-        <float>60</float>
-        <float>65</float>
-        <float>70</float>
-        <float>75</float>
-        <float>80</float>
-        <float>85</float>
-        <float>90</float>
-        <float>95</float>
+        <float>55.6000023</float>
         <float>100</float>
       </input_0>
       <input_1>
@@ -35291,20 +35291,20 @@
       </input_1>
       <output>
         <float>0</float>
-        <float>10</float>
+        <float>6.66666651</float>
+        <float>13.333333</float>
         <float>20</float>
-        <float>30</float>
-        <float>35</float>
+        <float>26.666666</float>
+        <float>33.3333321</float>
         <float>40</float>
-        <float>50</float>
+        <float>46.6666679</float>
+        <float>53.3333321</float>
         <float>60</float>
-        <float>65</float>
-        <float>70</float>
-        <float>75</float>
+        <float>66.6666641</float>
+        <float>73.3333359</float>
         <float>80</float>
-        <float>85</float>
-        <float>90</float>
-        <float>95</float>
+        <float>86.6666641</float>
+        <float>93.3333359</float>
         <float>100</float>
       </output>
       <incVal>0.1</incVal>
