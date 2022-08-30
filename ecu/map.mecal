@@ -5721,7 +5721,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>The flow-rate of your primary fuel injectors (individually) at the reference pressure - in cc/min</ToolTipText>
-          <value>420</value>
+          <value>450</value>
           <min>0</min>
           <max>0</max>
           <MeasurementUnitTypes />
