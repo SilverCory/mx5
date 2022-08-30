@@ -6283,9 +6283,9 @@
       <inputLinkIds>
         <unsignedShort>5</unsignedShort>
         <unsignedShort>7</unsignedShort>
-        <unsignedShort>3000</unsignedShort>
-        <unsignedShort>3000</unsignedShort>
         <unsignedShort>11</unsignedShort>
+        <unsignedShort>3000</unsignedShort>
+        <unsignedShort>2154</unsignedShort>
         <unsignedShort>3000</unsignedShort>
         <unsignedShort>3000</unsignedShort>
         <unsignedShort>15</unsignedShort>
@@ -6294,7 +6294,7 @@
         <unsignedShort>3000</unsignedShort>
         <unsignedShort>17</unsignedShort>
         <unsignedShort>2156</unsignedShort>
-        <unsignedShort>2154</unsignedShort>
+        <unsignedShort>3000</unsignedShort>
         <unsignedShort>704</unsignedShort>
       </inputLinkIds>
       <InputConfigs />
@@ -17703,7 +17703,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Select the type of lambda control to run. Refer to the user manual for further details on each mode.</ToolTipText>
-          <value>2</value>
+          <value>0</value>
           <min>0</min>
           <max>0</max>
           <options>
@@ -17728,7 +17728,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Select the source for the first bank's lambda sensor. Refer to the user manual for further details on each mode.</ToolTipText>
-          <value>1</value>
+          <value>0</value>
           <min>0</min>
           <max>0</max>
           <options>
@@ -17749,7 +17749,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Select the source for the second bank's lambda sensor. Refer to the user manual for further details on each mode.</ToolTipText>
-          <value>1</value>
+          <value>0</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -17805,7 +17805,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Number of seconds between the moment when the engine is started and the sensor's reading begins to be used.</ToolTipText>
-          <value>10</value>
+          <value>30</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -36904,7 +36904,7 @@
       <output_name>WBO2 Curr. AFR</output_name>
       <input_0>
         <float>0</float>
-        <float>65403.9258</float>
+        <float>65535</float>
         <float>65535</float>
         <float>65535</float>
         <float>65535</float>
@@ -36925,7 +36925,7 @@
       </input_1>
       <output>
         <float>10</float>
-        <float>19.98</float>
+        <float>20</float>
         <float>20</float>
         <float>20</float>
         <float>20</float>
