@@ -6283,9 +6283,9 @@
       <inputLinkIds>
         <unsignedShort>5</unsignedShort>
         <unsignedShort>7</unsignedShort>
-        <unsignedShort>11</unsignedShort>
         <unsignedShort>3000</unsignedShort>
-        <unsignedShort>2156</unsignedShort>
+        <unsignedShort>3000</unsignedShort>
+        <unsignedShort>11</unsignedShort>
         <unsignedShort>3000</unsignedShort>
         <unsignedShort>3000</unsignedShort>
         <unsignedShort>15</unsignedShort>
@@ -6293,7 +6293,7 @@
         <unsignedShort>3000</unsignedShort>
         <unsignedShort>3000</unsignedShort>
         <unsignedShort>17</unsignedShort>
-        <unsignedShort>3000</unsignedShort>
+        <unsignedShort>2156</unsignedShort>
         <unsignedShort>2154</unsignedShort>
         <unsignedShort>704</unsignedShort>
       </inputLinkIds>
@@ -17703,7 +17703,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Select the type of lambda control to run. Refer to the user manual for further details on each mode.</ToolTipText>
-          <value>0</value>
+          <value>2</value>
           <min>0</min>
           <max>0</max>
           <options>
@@ -17728,7 +17728,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Select the source for the first bank's lambda sensor. Refer to the user manual for further details on each mode.</ToolTipText>
-          <value>0</value>
+          <value>1</value>
           <min>0</min>
           <max>0</max>
           <options>
@@ -17749,7 +17749,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Select the source for the second bank's lambda sensor. Refer to the user manual for further details on each mode.</ToolTipText>
-          <value>0</value>
+          <value>1</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -17805,7 +17805,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Number of seconds between the moment when the engine is started and the sensor's reading begins to be used.</ToolTipText>
-          <value>30</value>
+          <value>10</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -36785,43 +36785,43 @@
       <input_0_name>IAT Raw</input_0_name>
       <output_name>IAT (° C)</output_name>
       <input_0>
-        <float>12504.0781</float>
-        <float>14286.63</float>
-        <float>16252.68</float>
-        <float>18349.8</float>
-        <float>20709.06</float>
-        <float>22937.25</float>
-        <float>25427.582</float>
-        <float>28704.332</float>
-        <float>32112.15</float>
-        <float>34733.55</float>
-        <float>38927.79</float>
-        <float>44563.8</float>
-        <float>48758.04</float>
-        <float>51995.47</float>
-        <float>54000.8359</float>
-        <float>57998.4766</float>
+        <float>5098.623</float>
+        <float>8073.91162</float>
+        <float>13002.1436</float>
+        <float>19477.002</float>
+        <float>26096.0371</float>
+        <float>32059.7227</float>
+        <float>37158.3477</float>
+        <float>41667.1523</float>
+        <float>44812.832</float>
+        <float>47814.3359</float>
+        <float>50619.2344</float>
+        <float>53175.1</float>
+        <float>55455.72</float>
+        <float>58496.54</float>
+        <float>61733.97</float>
+        <float>64420.9063</float>
       </input_0>
       <input_1>
         <float>0</float>
       </input_1>
       <output>
-        <float>84.31491</float>
-        <float>79.87914</float>
-        <float>76.12212</float>
-        <float>73.87459</float>
-        <float>69.98769</float>
-        <float>63.4485321</float>
-        <float>55.45988</float>
-        <float>45.4740677</float>
-        <float>40.973568</float>
-        <float>34.5020065</float>
-        <float>30.1876316</float>
-        <float>16.7052155</float>
-        <float>9.69436</float>
-        <float>6.458573</float>
-        <float>0.5263172</float>
-        <float>-9.44</float>
+        <float>120</float>
+        <float>100</float>
+        <float>80</float>
+        <float>63</float>
+        <float>50</float>
+        <float>40</float>
+        <float>32</float>
+        <float>25</float>
+        <float>20</float>
+        <float>15</float>
+        <float>10</float>
+        <float>5</float>
+        <float>0</float>
+        <float>-8</float>
+        <float>-20</float>
+        <float>-40</float>
       </output>
       <incVal>0.1</incVal>
       <defaultValue>0</defaultValue>
@@ -36904,7 +36904,7 @@
       <output_name>WBO2 Curr. AFR</output_name>
       <input_0>
         <float>0</float>
-        <float>65535</float>
+        <float>65403.9258</float>
         <float>65535</float>
         <float>65535</float>
         <float>65535</float>
@@ -36925,7 +36925,7 @@
       </input_1>
       <output>
         <float>10</float>
-        <float>20</float>
+        <float>19.98</float>
         <float>20</float>
         <float>20</float>
         <float>20</float>
