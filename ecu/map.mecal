@@ -17703,7 +17703,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Select the type of lambda control to run. Refer to the user manual for further details on each mode.</ToolTipText>
-          <value>1</value>
+          <value>2</value>
           <min>0</min>
           <max>0</max>
           <options>
@@ -17728,7 +17728,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Select the source for the first bank's lambda sensor. Refer to the user manual for further details on each mode.</ToolTipText>
-          <value>1</value>
+          <value>0</value>
           <min>0</min>
           <max>0</max>
           <options>
@@ -17749,7 +17749,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Select the source for the second bank's lambda sensor. Refer to the user manual for further details on each mode.</ToolTipText>
-          <value>1</value>
+          <value>0</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -17805,7 +17805,7 @@
           <readOnly>false</readOnly>
           <RequiresReset>false</RequiresReset>
           <ToolTipText>Number of seconds between the moment when the engine is started and the sensor's reading begins to be used.</ToolTipText>
-          <value>10</value>
+          <value>30</value>
           <min>0</min>
           <max>0</max>
           <ViewConstraint>
@@ -36903,43 +36903,43 @@
       <input_0_name>O2 Raw</input_0_name>
       <output_name>WBO2 Curr. AFR</output_name>
       <input_0>
-        <float>0</float>
-        <float>65403.9258</float>
-        <float>65535</float>
-        <float>65535</float>
-        <float>65535</float>
-        <float>65535</float>
-        <float>65535</float>
-        <float>65535</float>
-        <float>65535</float>
-        <float>65535</float>
-        <float>65535</float>
-        <float>65535</float>
-        <float>65535</float>
-        <float>65535</float>
-        <float>65535</float>
-        <float>65535</float>
+        <float>6553.5</float>
+        <float>9830.25</float>
+        <float>13107</float>
+        <float>16383.75</float>
+        <float>19660.5</float>
+        <float>22937.25</float>
+        <float>26214</float>
+        <float>29490.75</float>
+        <float>32767.5</float>
+        <float>36044.25</float>
+        <float>39321</float>
+        <float>42597.75</float>
+        <float>45874.5</float>
+        <float>49151.25</float>
+        <float>52428</float>
+        <float>58981.5</float>
       </input_0>
       <input_1>
         <float>0</float>
       </input_1>
       <output>
-        <float>10</float>
-        <float>19.98</float>
-        <float>20</float>
-        <float>20</float>
-        <float>20</float>
-        <float>20</float>
-        <float>20</float>
-        <float>20</float>
-        <float>20</float>
-        <float>20</float>
-        <float>20</float>
-        <float>20</float>
-        <float>20</float>
-        <float>20</float>
-        <float>20</float>
-        <float>20</float>
+        <float>8.5</float>
+        <float>9.09</float>
+        <float>9.69</float>
+        <float>10.28</float>
+        <float>10.88</float>
+        <float>11.47</float>
+        <float>12.06</float>
+        <float>12.66</float>
+        <float>13.25</float>
+        <float>13.84</float>
+        <float>14.44</float>
+        <float>15.03</float>
+        <float>15.63</float>
+        <float>16.22</float>
+        <float>16.81</float>
+        <float>18</float>
       </output>
       <incVal>0.1</incVal>
       <defaultValue>0</defaultValue>
