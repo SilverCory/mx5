@@ -36806,21 +36806,21 @@
         <float>0</float>
       </input_1>
       <output>
-        <float>60</float>
-        <float>50</float>
-        <float>45</float>
-        <float>40</float>
-        <float>35</float>
-        <float>30</float>
-        <float>25</float>
-        <float>20</float>
-        <float>15</float>
-        <float>10</float>
-        <float>5</float>
-        <float>0</float>
-        <float>-2.44</float>
-        <float>-6.16</float>
-        <float>-7.62</float>
+        <float>84.31491</float>
+        <float>79.87914</float>
+        <float>76.12212</float>
+        <float>73.87459</float>
+        <float>69.98769</float>
+        <float>63.4485321</float>
+        <float>55.45988</float>
+        <float>45.4740677</float>
+        <float>40.973568</float>
+        <float>34.5020065</float>
+        <float>30.1876316</float>
+        <float>16.7052155</float>
+        <float>9.69436</float>
+        <float>6.458573</float>
+        <float>0.5263172</float>
         <float>-9.44</float>
       </output>
       <incVal>0.1</incVal>
